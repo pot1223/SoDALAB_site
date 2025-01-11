@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Titan+One&display=swap');
+
+
+html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    position: relative;
+    padding-top: 0em;
+    font-size: 12pt;
+    font-family: "Lato", Verdana, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 2;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+.banner-bg2 {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#header {
+    color: #d5d5d5;
+    cursor: default;
+    left: 0;
+    line-height: 4.5em;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    width: 100%;
+    z-index: 10001;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), 50%, rgba(0, 0, 0, 0.6));
+}
+
+#header .inner {
+    max-width: 65em;
+    width: calc(100% - 6em);
+    margin: 0 auto;
+    position: relative;
+}
+
+#header .logo {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    display: inline-block;
+    height: inherit;
+    left: 0;
+    line-height: inherit;
+    margin: 0 160px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    color: #000000;
+    font-size: 1.25em;
+    text-transform: none;
+    font-weight: normal;
+}
+
+.logo-image {
+    height: 3em;
+    vertical-align: middle;
+    filter:invert(100%) sepia(0%) saturate(0%) hue-rotate(250deg) brightness(101%) contrast(102%);
+}
+
+#nav  {
+    display: inline-block;
+    margin: 0 160px;
+}
+
+#nav a:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#header .current {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#header a {
+    transition: color 0.2s ease-in-out;
+    display: inline-block;
+    padding: 0 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8em;
+    color: white;
+    margin: 0;
+}
+
+.navPanelToggle {
+    position: fixed;
+    text-decoration: none;
+    height: 4em;
+    right: 2em;
+    top: 0.4em;
+    width: 4em;
+    display: none;
+    z-index: 10002;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+#banner {
+    color: #ffffff;
+    padding: 10em 0 0 0;
+    text-align: center;
+    position: relative;
+}
+
+#banner .banner-pad {
+    padding: 0 0 35em 0;
+}
+
+#banner .inner {
+    max-width: 65em;
+    width: calc(100% - 6em);
+    margin: 0 auto;
+    position: relative;
+    z-index: 10000;
+    line-height: 1.5;
+}
+
+#banner h1 {
+    font-size: 2em;
+    margin: 0 0 0.5em 0;
+    padding: 0;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+
+  
+  
+  @keyframes bounce {
+    100% {
+      transform: translateY(-20%);
+    }
+  }
+  
+  .main-content-1 {
+    width: 100%;
+    height: 500vh;
+  
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .sticky-background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8vw;
+  }
+  
+  .card-frame {
+    position: absolute;
+    width: 95vw;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: 24%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20vw;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: perspective(100vw)
+    translateX(100vw) 
+    rotateY(180deg);
+    transition: transform 0.1s;
+  }
+  
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+    overflow: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    background-color: #FFF;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    text-align: center;
+
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+    background-color: #FFF;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align :center;
+  }
+  
+  @media screen and (orientation:portrait) {
+    .card-frame {
+      display: grid;
+      height: initial;
+      width: initial;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10vw;
+      justify-items: center;
+    }
+
+  }
+
+
+
+#footer {
+    background-color: #000000;
+    color: #000000;
+    padding: 3em 0 3em 0;
+    background: #f7f7f7;
+}
+
+#footer .inner {
+    max-width: 65em;
+    width: calc(100% - 6em);
+    margin: 0 auto;
+}
+
+#footer strong, #footer b {
+    color: #6d6d6d;
+}
+
+.inner:not(.header_inner) {
+    line-height: 1.5;
+}
+
+#main-content {
+  position: relative;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+*{
+  font-family: "Inter", sans-serif;
+}
+
+.swiper {
+  width: 1000px;
+}
+
+.card{
+  font-size:0;
+}
+
+.card-wrapper{
+  overflow: hidden;
+  margin:0 60px 20px;
+}
+
+
+.card-list .card-item{
+  list-style:none;
+  height:300px;
+}
+
+.card-list .card-item{
+  user-select:none;
+  display: block;
+  user-select:none;
+  background:rgba(0,0,0,0.7);
+  padding:18px;
+  border-radius:12px;
+  text-decoration:none;
+  border:2px solid transparent;
+  box-shadow:0 10px 10px rgba(0,0,0,0.05);
+  transition:0.2s ease;
+
+}
+
+.card-list .card-item {
+  cursor:grabbing;
+}
+
+.card-list .card-item:hover {
+  border-color: #abc7ff
+}
+
+.card-item{
+  user-select: none;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2em;
+  height: 18em;
+}
+
+.card-wrapper .swiper-pagination-bullet{
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background:  #fff; 
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+  opacity:1;
+}
+
+.card-wrapper .swiper-slide-button{
+  color: #fff;
+  margin-top: -35px;
+  font-size:3rem;
+  transition: 0.2s ease;
+}
+
+.swiper-slide-button:hover{
+  color: #abc7ff
+}
+
+@media screen and (max-width : 768px){
+  .card-wrapper{
+    margin:0 10px 25px;
+  }
+
+  .card-wrapper .swiper-slide-button{
+    display:none;
+  }
+}
+
+
+
+.card-button{
+  height:35px;
+  width:35px;
+  color: #5372F0;
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  cursor:pointer;
+  background: none;
+  border: 2px solid #5372F0;
+}
+
+.icon-image {
+  margin-inline:auto;
+  max-width: 60%;
+}
+
+.card .title {
+  
+  text-align:center;
+  font-size:1.5rem;
+  line-height: 1.875rem;
+  margin-block:2.5rem 1.5rem;
+}
+
+.card .detail{
+  text-align : center;
+  font-size:1rem;
+  margin-block:0.5rem;
+}

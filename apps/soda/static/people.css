@@ -1,0 +1,47 @@
+#main {
+    padding: 6em 0 2em 0;
+    z-index: 5000;
+    position:relative;
+}
+
+
+section .inner {
+    max-width: 65em;
+    width: calc(100% - 6em);
+    margin: 0 auto;
+}
+
+.entry {
+    display: inline-block;
+    width: 100%;
+}
+
+
+.image-left {
+    float: left;
+    margin: 0 1.5em 1em 0;
+    top: 0.25em;
+}
+
+
+.image-left-prof {
+    float: left;
+    margin: 0 1.5em 7em 0;
+    top: 0.25em;
+}
+
+
+.profile-photo {
+    width: 176px;
+    height: 236px;
+    object-fit: cover;
+}
+
+
+.profile-photo-professor{
+
+    width: 340px;
+    height: 400 px;
+    object-fit: cover;
+
+}

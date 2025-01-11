@@ -1,0 +1,317 @@
+<!-- url("{{ url_for('soda.static', filename='images/kyonggiEngineeringPlace.JPG') }}"); -->
+<!-- src="{{ url_for('soda.static', filename='images/soda_logo.JPG') }}" --> 
+
+<!DOCTYPE html> 
+<html lang = "ko">
+
+  <head>
+    <meta charset = "UTF-8" />
+    <title>SoDALAB</title>
+    <link rel="stylesheet" href = "{{url_for('soda.static', filename='home.css')}}"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  </head>
+  <style>
+    #banner-bg {
+    background:  url("{{ url_for('soda.static', filename='images/semi_home.jpg') }}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 9999;
+
+    }
+
+
+    .main-content-1 {
+    background:  url("{{ url_for('soda.static', filename='images/kguphoto.jpg') }}");
+    background-size: cover; /* div 크기에 맞게 확대/축소 */
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw; /* 뷰포트 너비에 맞춤 */
+    height: 100vh; /* 뷰포트 높이에 맞춤 */
+    }
+
+
+
+  </style>
+  <body class>
+    <section id="banner-bg">
+      <section class="banner-bg2">
+        <header id="header">  
+
+          <div class="innder header_inner">
+
+            <a href="." class="logo">  
+              <img class = "logo-image" src="{{ url_for('soda.static', filename='images/soda_logo.png') }}">
+            </a>
+
+            <nav id="nav"> 
+              <a href="." class="current"> 연구실</a>
+              <a href="{{url_for('soda.people')}}" class> 구성원</a>
+              <a href="{{url_for('soda.public')}}" class> 연구논문</a>
+              <a href="{{url_for('soda.gallery')}}" class> 활동사진</a>
+            </nav>
+
+          </div>
+
+        </header>
+
+        <a href="#menu" class="navPanelToggle">
+          <span class="fa fa-bars"></span>
+        </a>
+
+        <section id="banner">
+          <div class="banner-pad">
+            <div class ="inner"> 
+              <h1>SoDALAB에 오신 걸 환영합니다</h1>
+              <span style=>경기대학교 데이터분석 연구실</span>
+            </div>
+          </div>
+        </section>
+        <div class="container swiper" id="main-content"> 
+          <div class="card-wrapper">
+
+            <ul class="card-list swiper-wrapper">
+              <li class= "card-item swiper-slide">
+                <p style="color: #d5d5d5;">  12월 27일, 2024 </p>
+                <br>
+                <h2 style="margin-top:0.5em; color: #d5d5d5;"><strong>수상</strong></h2>
+                <p style="margin:0.5em 0; line-height:1.4; color: #d5d5d5;"> 연세대학교 사회문제 해결 아이디어 대회 최우수상 수상  </p> 
+                <p style="margin:0.5em 0; line-height:1.4; color: #d5d5d5;"> 주졔: 생성형 AI의 적대적 프롬프트 탐지 모델 개발 및 활용 </p> 
+              </li>
+              <li class= "card-item swiper-slide">
+                <p style="color: #d5d5d5;">  12월 15일, 2024 </p>
+                <br>
+                <h2 style="margin-top:0.5em; color: #d5d5d5;"><strong>국제 컨퍼런스</strong></h2>
+                <p style="margin:0.5em 0; line-height:1.4; color: #d5d5d5;">ICIS 국제 컨퍼런스 참가 및 발표</p> 
+                <p style="margin:0.5em 0; line-height:1.4; color: #d5d5d5;">Designing Effective Elevator TV Ads: An Experimental Approach Visual Complexity and information accessibility Integration </p> 
+              </li>
+
+              <li class= "card-item swiper-slide">
+                <p style="color: #d5d5d5;"> 11월 30일, 2024 </p>
+                <br>
+                <h2 style="margin-top:0.5em; color: #d5d5d5;"><strong>한국경영정보학회 논문 채택</strong></h2>
+                <p style="margin:0.5em 0; line-height:1.4; color: #d5d5d5;">수소차 활성화를 위한 주요 요인 도출과 전략 제안: 텍스트 마이닝과 인터뷰 혼합방법론</p> 
+                          
+              </li>
+
+              <li class= "card-item swiper-slide">
+                <p style="color: #d5d5d5;">  11월 9일, 2024 </p>
+                <br>
+                <h2 style="margin-top:0.5em;color: #d5d5d5;"><strong>수상</strong></h2>
+                <p style="margin:0.5em 0; line-height:1.4;color: #d5d5d5;"> 4차 KOPIS 빅데이터 분석 대회 2등 수상 </p> 
+                <p style="margin:0.5em 0; line-height:1.4;color: #d5d5d5;"> 주제: 공연 기획부터 종료까지, 공연 시장의 효율적 의사결정을 위한 공연 수명주기 예측  </p> 
+                         
+              </li>
+              <li class= "card-item swiper-slide">
+                <p style="color: #d5d5d5;">  3월 22일, 2024 </p>
+                <br>
+                <h2 style="margin-top:0.5em;color: #d5d5d5;"><strong>한국경영정보학회 논문 채택</strong></h2>
+                <p style="margin:0.5em 0; line-height:1.4;color: #d5d5d5;">클러스터링 기법을 이용한 이륜차 사고의 특징 분류</p> 
+                         
+              </li>
+
+            </ul>
+          
+            <div class="swiper-pagination"></div>
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
+          
+         
+
+
+          </div>
+        </div>
+      </section>
+    </section>
+
+
+    <div class="main-content-1 ">
+      <div class="sticky">
+        <div class="card-frame ">
+
+          <div class="card ">
+            <div class="front"> 
+              <a href="." class="icon">  
+                <img class = "icon-image" src="{{ url_for('soda.static', filename='images/soda_nlp.png') }}">
+              </a>
+              <div class="title"> <strong>자연어 처리</strong> </div>
+              <div class ="detail"> 거대언어모델 </div>
+              <div class ="detail"> 주요인 분석</div>
+              <div class ="detail"> 감정 분석 </div>
+            </div>
+            <div class="back"></div>
+          </div>
+
+          <div class="card">
+            <div class="front"> 
+              <a href="." class="icon">  
+                <img class = "icon-image" src="{{ url_for('soda.static', filename='images/soda_recommender.png') }}">
+              </a>
+              <div class="title"> <strong>추천 시스템 </strong></div>
+              <div class ="detail"> 콘텐츠 기반 필터링</div>
+              <div class ="detail"> 협업 필터링 </div>
+              <div class ="detail"> 그래픽 모델 </div>
+            </div>
+            <div class="back"></div>
+          </div>
+
+          <div class="card">
+            <div class="front"> 
+              <a href="." class="icon">  
+                <img class = "icon-image" src="{{ url_for('soda.static', filename='images/soda_forecast.png') }}">
+              </a>
+              <div class="title"> <strong> 예측 </strong></div>
+              <div class ="detail"> 머신러닝/딥러닝 </div>
+              <div class ="detail"> 시계열 예측 </div>
+              <div class ="detail"> 이상 탐지 </div>
+
+            </div>
+            <div class="back"></div>
+          </div>
+
+          <div class="card">
+            <div class="front"> 
+              <a href="." class="icon">  
+                <img class = "icon-image" src="{{ url_for('soda.static', filename='images/soda_pattern.png') }}">
+              </a>
+              <div class="title"> <strong> 분석 </strong> </div>
+              <div class ="detail"> 패턴 인식 </div>
+              <div class ="detail"> 인과 추론 </div>
+              <div class ="detail"> 근사 추론 </div>
+            </div>
+            <div class="back"></div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <section id = "footer">
+      <div class = "inner">
+        <strong>SoDALAB, 산업경영공학과, 경기대학교</strong>
+        <br>
+        <a>5층 506호, 제2공학관, 수원 캠퍼스, 경기대학교</a>
+        <br>
+        <a> (16227) 광교, 수원시, 경기도 154-42, 대한민국 </a>
+        <br>
+        <a> COPYRIGHT ⓒ2025 Graduate School of KGU. SoDALAB. All rights reserved</a>
+      </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+
+      new Swiper('.card-wrapper', {
+        
+      loop: true,
+      spaceBetween: 30,
+      autoplay:{delay:3000,},
+
+      pagination: {
+        el: '.swiper-pagination',
+        clickable:true,
+        dynamicBullets: true,
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      breakpoints:{
+        0:{
+          slidesPerView:1
+        },
+        768:{
+          slidesPerView:2
+        },
+        1024:{
+          slidesPerView:3
+        },
+      }
+
+
+      });
+
+
+
+
+      
+
+      class CardFlipOnScroll {
+        constructor(wrapper, sticky) {
+          this.wrapper = wrapper
+          this.sticky = sticky
+          this.cards = sticky.querySelectorAll('.card')
+          this.length = this.cards.length
+  
+          this.start = 0
+          this.end = 0
+          this.step = 0
+        }
+  
+        init() {
+          this.start = this.wrapper.offsetTop - 100
+          this.end = this.wrapper.offsetTop + this.wrapper.offsetHeight - innerHeight * 1.2
+          this.step = (this.end - this.start) / (this.length * 0.1 )
+        }
+  
+        animate() {
+          this.cards.forEach((card, i) => {
+            const s = this.start + this.step * i
+            const e = s + this.step * (this.length + 1)
+  
+            if (scrollY <= s) {
+              card.style.transform = `
+                perspective(100vw)
+                translateX(100vw) 
+                rotateY(180deg)
+              `
+            } else if (scrollY > s && scrollY <= e - this.step) {
+              card.style.transform = `
+                perspective(100vw)
+                translateX(${50 + (scrollY - s) / (e - s) * -50}vw)
+                rotateY(180deg)
+              `
+            } else if (scrollY > e - this.step && scrollY <= e) {
+              card.style.transform = `
+                perspective(100vw)
+                translateX(${50 + (scrollY - s) / (e - s) * -50}vw)
+                rotateY(${180 + -(scrollY - (e - this.step)) / this.step * 180}deg)
+              `
+            } else if (scrollY > e) {
+              card.style.transform = `
+                perspective(100vw)
+                translateX(0) 
+                rotateY(0deg)
+              `
+            }
+          })
+        }
+      }
+  
+      const mainContent1 = document.querySelector('.main-content-1')
+      const sticky = document.querySelector('.sticky')
+      const cardFlipOnScroll = new CardFlipOnScroll(mainContent1, sticky)
+      cardFlipOnScroll.init()
+  
+      window.addEventListener('scroll', () => {
+        cardFlipOnScroll.animate()
+      })
+  
+      window.addEventListener('resize', () => {
+        cardFlipOnScroll.init()
+      })
+    </script>
+
+  </body>
+
+</html>
+

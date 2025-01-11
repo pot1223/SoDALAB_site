@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <meta charset = "UTF-8" />
+        <title>people</title>
+        <link rel="stylesheet" href = "{{url_for('soda.static', filename='home.css')}}"/>
+        <link rel="stylesheet" href = "{{url_for('soda.static', filename='people.css')}}"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        
+    </head>
+
+
+    <body>
+        
+        <header id="header">  
+      
+            <div class="innder header_inner">
+      
+                <a href="." class="logo">  
+                    <img class = "logo-image" src="{{ url_for('soda.static', filename='images/soda_logo.png') }}" s >
+                </a>
+      
+                <nav id="nav"> 
+                    <a href="."> Home</a>
+                    <a href="{{url_for('soda.people')}}" class="current" >  구성원</a>
+                    <a href="{{url_for('soda.public')}}" class > 연구논문</a>
+                    <a href="{{url_for('soda.gallery')}}" class > 활동사진</a>
+                </nav>
+      
+            </div>
+      
+        </header>
+ 
+ 
+        <section id="main"> 
+            <div class="inner">
+                <header class="major"> 
+                    <h1 style="font-size: 2em; margin: 0 0 0.25em 0;"> 구성원</h1>
+                </header>
+                <br>
+                <section style="border-bottom: 1px solid #e1e1e1;"> 
+                    <h3 style="font-size: 1.35em;  font-weight: 700; line-height: 1.4;">교수 </h3>
+                    <div class="entry">
+                        <span class="image-left-prof" > 
+                            <img class="profile-photo-professor" src="{{ url_for('soda.static', filename='images/people/prof_sohyun.png') }}"> 
+                        </span>
+                        <h4 style="color:rgb(78, 89, 104);    font-size: 2em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 이소현(So-Hyun Lee)</h4>
+                        <div style="padding-top:10px; color:rgb(78, 89, 104);  font-size:1.5em"> 산업경영공학과 조교수 </div>
+                        <div style="color:rgb(78, 89, 104);  font-size:1.5em"> 경기대학교 제2공학관 502호 </div>
+
+                        <div>
+                            <ul style="padding-left: 390px; ">
+                                <li style="color:rgb(78, 89, 104); font-size:1em"> 데이터 마이닝 & 경영 정보 </li>
+                                <li style="color:rgb(78, 89, 104); font-size:1em"> 디지털 비즈니스 </li>
+                                <li style="color:rgb(78, 89, 104); font-size:1em"> 생성형 AI </li>
+                            </ul>
+                        </div>     
+                        <div style="display: flex; align-items: center; gap: 0.5em; margin-top: 5px;">
+                            <span class="material-icons" style=" color:rgb(78, 89, 104);  font-size: 20px;">email</span>
+                            <div style="color:rgb(78, 89, 104);  font-size: 1em;">sohyun@kyonggi.ac.kr</div>
+                        </div>
+
+        
+
+                    </div>
+                </section>
+
+                <section style="border-bottom: 1px solid #e1e1e1;"> 
+                    <h3 style="font-size: 1.35em;  font-weight: 700; line-height: 1.4;">석사</h3>
+                    <div class="entry">
+                        <span class="image-left"> 
+                            <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/minho.jpg') }}"> 
+                        </span>
+                        <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 송민호</h4>
+                        <div style="padding-top:10px;"> 석사과정학생 </div>
+                        <div style="font-size:0.95em"> 산업경영공학 </div>
+                        <div>
+                            <ul style="padding-left: 220px; ">
+                                <li style="font-size:0.95em"> 패턴인식 </li>
+                                <li style="font-size:0.95em"> 추천시스템 </li>
+                                <li style="font-size:0.95em"> 인과추론 </li>
+                            </ul>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5em;">
+                            <span class="material-icons" style="font-size: 20px;">email</span>
+                            <div style="font-size: 0.95em;">pot1223@kyonggi.ac.kr</div>
+                        </div>
+                        <div> <a href="https://atlantic-wound-003.notion.site/31cfdbaf32084320ae887993289b27b3"> 포트폴리오 </a></div>   
+                        
+
+
+                    </div>
+                </section>
+
+
+                <section  style="border-bottom: 1px solid #e1e1e1;"> 
+                    <h3 style="font-size: 1.35em;  font-weight: 700; line-height: 1.4;">학부생</h3>
+
+                    <div class="entry" style="width:50%; float: left; min-height: 11.25rem;">
+                        <span class="image-left"> 
+                            <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/Taesung.jpg') }}"> 
+                        </span>
+                        <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 양태성
+
+                        </h4>
+                        <div style="padding-top:10px;"> 학부연구생 </div>
+                        <div style="font-size:0.95em"> 응용통계학 </div>
+                        <ul style="padding-left: 220px; ">
+                            <li style="font-size:0.95em"> 자연어 처리 </li>
+                            <li style="font-size:0.95em"> 텍스트 마이닝 </li>
+                        </ul>
+                        <div style="display: flex; align-items: center; gap: 0.5em;">
+                            <span class="material-icons" style="font-size: 20px;">email</span>
+                            <div style="font-size: 0.95em;">bigcastle121@kyonggi.ac.kr</div>
+                        </div>
+                        <div> <a href="https://faithful-debt-e9b.notion.site/Taeseong-Yang-16c3c6a1c04d80049054d4f4cfc895ac"> 포트폴리오</a></div>   
+                    </div>
+
+                    <div class="entry" style="width:50%; min-height: 11.25rem;">
+                        <span class="image-left"> 
+                            <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/Jaesung.jpg') }}"> 
+                        </span>
+                        <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 최재성</h4>
+                        <div style="padding-top:10px;"> 학부연구생 </div>
+                        <div style="font-size:0.95em"> 경영정보학 </div>
+                        <ul style="padding-left: 220px; ">
+                            <li style="font-size:0.95em"> 머신러닝 </li>
+                            <li style="font-size:0.95em"> 이커머스 </li>
+                        </ul>
+                        <div style="display: flex; align-items: center; gap: 0.5em;">
+                            <span class="material-icons" style="font-size: 20px;">email</span>
+                            <div style="font-size: 0.95em;">cjaes01@kyonggi.ac.kr</div>
+                        </div>
+                        <div> <a href="https://www.notion.so/Taeseong-Yang-16c3c6a1c04d80049054d4f4cfc895ac"> 포트폴리오</a></div>   
+                    </div>
+
+                    <div class="entry" style="width:50%; min-height: 11.25rem;">
+                        <span class="image-left"> 
+                            <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/yeojin.jpg') }}"> 
+                        </span>
+                        <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 윤여진</h4>
+                        <div style="padding-top:10px;"> 학부연구생 </div>
+                        <div style="font-size:0.95em"> 경영정보학 </div>
+                        <ul style="padding-left: 220px; ">
+                            <li style="font-size:0.95em"> 머신러닝 </li>
+                            <li style="font-size:0.95em"> 예측 </li>
+                        </ul>
+                        <div style="display: flex; align-items: center; gap: 0.5em;">
+                            <span class="material-icons" style="font-size: 20px;">email</span>
+                            <div style="font-size: 0.95em;">xnejfc@kyonggi.ac.kr</div>
+                        </div>
+                        <div> <a href="https://fluffy-fibre-11b.notion.site/1731aac8c7ad8097a266cfd242ed462e"> 포트폴리오</a></div>   
+                    </div>
+
+
+                </section>
+
+
+                <section> 
+                    <h3 style="font-size: 1.35em;  font-weight: 700; line-height: 1.4;">졸업생</h3>
+
+
+                    <div class="entry" style= "width:50%; float: left; min-height: 11.25rem;">
+                        <span class="image-left"> 
+                            <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/minbeom.png') }}"> 
+                        </span>
+                        <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 윤민범</h4>
+                        <div style="padding-top:10px;"> 2025년 2월 졸업 </div>
+                        <div style="font-size:0.95em"> 현재: 연세대학교 정보대학원 소속 </div>
+                    </div>
+
+                    <div class="entry" style= "width:50%;  min-height: 11.25rem;">
+                        <span class="image-left"> 
+                            <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/Jinho.jpg') }}"> 
+                        </span>
+                        <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 강진호</h4>
+                        <div style="padding-top:10px;"> 2025년 2월 졸업 </div>
+                        <div style="font-size:0.95em"> 현재: 연세대학교 정보대학원 소속 </div>
+                    </div>
+
+                    <div class="entry" style= "width:50%; min-height: 11.25rem;">
+                        <span class="image-left"> 
+                            <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/Minkyung.png') }}"> 
+                        </span>
+                        <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 이민경 </h4>
+                        <div style="padding-top:10px;"> 2024년 1월 졸업 </div>
+                        <div style="font-size:0.95em"> 현재: 해외유학중  </div>
+                    </div>
+                </section>
+
+
+
+            </div>
+        </section>
+
+
+        <section id = "footer">
+            <div class = "inner">
+              <strong>SoDALAB, 산업경영공학과, 경기대학교</strong>
+              <br>
+              <a>5층 506호, 제2공학관, 수원 캠퍼스, 경기대학교</a>
+              <br>
+              <a> (16227) 광교, 수원시, 경기도 154-42, 대한민국 </a>
+              <br>
+              <a> COPYRIGHT ⓒ2025 Graduate School of KGU. SoDALAB. All rights reserved</a>
+            </div>
+          </section>
+
+    </body>
+
+    
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <meta charset = "UTF-8" />
+        <title>gallery</title>
+        <link rel="stylesheet" href = "{{url_for('soda.static', filename='home.css')}}"/>
+        <link rel="stylesheet" href = "{{url_for('soda.static', filename='gallery.css')}}"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    </head>
+
+    <body>
+
+      <header id="header">  
+      
+        <div class="innder header_inner">
+  
+            <a href="." class="logo">  
+                <img class = "logo-image" src="{{ url_for('soda.static', filename='images/soda_logo.png') }}"  >
+            </a>
+  
+            <nav id="nav"> 
+                <a href="."> 연구실</a>
+                <a href="{{url_for('soda.people')}}" class >  구성원</a>
+                <a href="{{url_for('soda.public')}}" class > 연구논문</a>
+                <a href="{{url_for('soda.gallery')}}" class="current" >활동사진</a>
+            </nav>
+  
+        </div>
+  
+      </header>
+
+
+
+
+      <section id="main"> 
+
+        <div class="inner swiper">
+          <header class="major"> 
+            <h1 style="font-size: 2em; margin: 0 0 0.25em 0;"> </h1>
+          </header>
+          <br>
+
+
+          <div class="swiper-wrapper">
+            <section class="entry swiper-slide">
+              <span class="entry-theme-photo">
+                <span class="entry-theme-photo-head">
+                  <span class="entry-theme-photo-title">
+                    <h2 style="font-size: 1.75em; font-weight: 700; line-height: 1.4; margin:0; padding:0"> LAB dinner</h2>
+                  </span>
+                  <span class="entry-theme-photo-date">
+                    <p style="margin:0; padding:0">2월 26일, 2024</p>
+                  </span>
+                </span>               
+                <img class="photo-image" src="{{ url_for('soda.static', filename='images/gallery/sodagroup.jpg') }}"  >
+              </span>
+            </section>
+
+            <section class="entry swiper-slide">
+              <span class="entry-theme-photo">
+                <span class="entry-theme-photo-head">
+                  <span class="entry-theme-photo-title">
+                    <h2 style="font-size: 1.75em; font-weight: 700; line-height: 1.4; margin:0; padding:0"> ICIS </h2>
+                  </span>
+                  <span class="entry-theme-photo-date">
+                    <p style="margin:0; padding:0">12월 16일, 2024</p>
+                  </span>
+                </span>               
+                <img class="photo-image" src="{{ url_for('soda.static', filename='images/gallery/icis.jpg') }}"  >
+              </span>
+            </section>
+
+
+            <section class="entry swiper-slide">
+              <span class="entry-theme-photo">
+                <span class="entry-theme-photo-head">
+                  <span class="entry-theme-photo-title">
+                    <h2 style="font-size: 1.75em; font-weight: 700; line-height: 1.4; margin:0; padding:0"> SoDA X KBLs workshop </h2>
+                  </span>
+                  <span class="entry-theme-photo-date">
+                    <p style="margin:0; padding:0">2월 24일, 2024</p>
+                  </span>
+                </span>               
+                <img class="photo-image" src="{{ url_for('soda.static', filename='images/gallery/workshop.jpg') }}"  >
+              </span>
+            </section>
+
+
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+
+
+
+
+
+
+      <br>
+      <br>
+      <br>
+
+      <section id = "footer">
+        <div class = "inner">
+          <strong>SoDALAB, 산업경영공학과, 경기대학교</strong>
+          <br>
+          <a>5층 506호, 제2공학관, 수원 캠퍼스, 경기대학교</a>
+          <br>
+          <a> (16227) 광교, 수원시, 경기도 154-42, 대한민국 </a>
+          <br>
+          <a> COPYRIGHT ⓒ2025 Graduate School of KGU. SoDALAB. All rights reserved</a>
+        </div>
+      </section>
+
+
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+
+    new Swiper('.swiper', {
+    autoHeight:true,
+    loop: true,
+    spaceBetween: 30,
+    autoplay:{delay:3000,},
+
+    });
+    </script>
+    
+</html>

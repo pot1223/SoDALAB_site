@@ -1,0 +1,50 @@
+#main {
+    padding: 6em 0 2em 0;
+    z-index: 5000;
+    position:relative;
+}
+
+
+section .inner {
+    max-width: 65em;
+    width: calc(100% - 6em);
+    margin: 0 auto;
+}
+
+.entry {
+    display: inline-block;
+    width: 100%;
+}
+
+
+.entry-theme-photo {
+    max-width: 48em;
+    display: block;
+    margin: auto;
+    padding: 2em 0 2em 0;
+}
+
+.entry-theme-photo-head {
+    display: block;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.entry-theme-photo-title {
+    display: inline-block;
+    padding-bottom: 1em;
+}
+
+.photo-image {
+    display: block;
+    margin: auto;
+    max-width: 70%;
+    height:400px;
+    object-fit: cover;
+}
+
+.swiper {
+    width: 1000px;
+  }
+
+  
