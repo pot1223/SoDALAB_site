@@ -7,6 +7,7 @@ soda = Blueprint(
     static_folder = "static",
 )
 
+
 @soda.route("/")
 def index():
     return render_template("soda/home.html")
@@ -22,3 +23,15 @@ def public():
 @soda.route("/gallery")
 def gallery():
     return render_template("soda/gallery.html")
+
+@soda.route("/intro")
+def intro():
+    return render_template("soda/intro.html")
+
+@soda.route("/domain")
+def domain():
+    return render_template("soda/domain.html")
+
+@soda.route("/prof")
+def prof():
+    return render_template("soda/prof.html")

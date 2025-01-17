@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <meta charset = "UTF-8" />
+        <title>intro</title>
+        <link rel="stylesheet" href = "{{url_for('soda.static', filename='home.css')}}"/>
+        <link rel="stylesheet" href = "{{url_for('soda.static', filename='intro.css')}}"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    </head>
+
+    <body>
+
+        <header id="header">  
+            <div class="innder header_inner">
+              <a href="." class="logo">  
+                <img class = "logo-image" src="{{ url_for('soda.static', filename='images/soda_logo.png') }}">
+              </a>
+              <nav id="nav"> 
+                <a href="." class="current"> 연구실</a>
+                <a href="{{url_for('soda.prof')}}" class> 교수</a>
+                <a href="{{url_for('soda.people')}}" class> 구성원</a>
+                <a href="{{url_for('soda.public')}}" class> 연구</a>
+                <a href="{{url_for('soda.gallery')}}" class> 활동사진</a>
+              </nav>
+            </div>
+          </header>
+
+
+
+
+        <section id="main"> 
+            <div class="inner">
+                <header class="major"> 
+                    <h1 style="font-size: 35px; margin:0"> 데이터분석 연구실</h1>
+                </header>
+    
+
+                <span class="intro-photo">     
+                    <img class="photo-image" src="{{ url_for('soda.static', filename='images/semi_image.jpg') }}"  >
+                </span>
+                
+
+
+
+
+                <section style="border-bottom: 1px solid #e1e1e1; padding-bottom:1em; margin-bottom:1em;"> 
+                    <div class="entry">
+                        <p style="font-size:  18px;"> 
+                            경기대학교 산업경영대학원 데이터 분석 연구실(Sohyun Data Analytics Lab: SoDALAB)에 방문하신 것을 환영합니다.
+                        </p>
+                        <p style="font-size: 18px;">  </p>
+                        <div style="font-size: 18px;"> SoDALAB은 디지털 환경에서 다양한 비즈니스적 문제에 대한 연구를 수행합니다. </div>
+                        <p style="font-size: 18px;">  </p>
+                        <div style="font-size: 18px;">  본 연구실은 디지털 미디어와 다양한 온라인 및 모바일 플랫폼에서 제공되는 서비스에 초점을 맞추고 있습니다. 주요 관심은 디지털 서비스의 비즈니스 모델 개발, 서비스 평가, 운영 및 성과 향상입니다. 이를 위해 기업체와 협력하여 서비스 고객의 입장에서 문제를 이해하고 해결하고 있습니다.
+                        </div>
+                        <p style="font-size: 18px;">  </p>
+
+                        <div style="font-size: 18px;">
+                            또한, 데이터 사이언스 및 AI 기법과 계량 경제적 방법론을 활용하여 비즈니스 문제를 파악하고 해결하는 방법에 대해 연구합니다. 이를 위해 다양한 접근법을 반복적으로 탐색하고 최적화하며 효과적인 비즈니스 문제 해결 방법을 개발하는 데 초점을 두고 있습니다. 
+                        </div>
+                        <p style="font-size: 18px;">  </p>
+                        <div style="font-size: 18px;">  
+                            SoDALAB은 경영학, 마케팅학, 심리학, 정보시스템학, 경제학, 컴퓨터공학 등 다양한 학문 분야의 이론과 지식을 융합적으로 활용합니다. 다양한 학문 분야의 지식을 결합하여 현실적이고 혁신적인 연구를 수행하며, 효율적이고 효과적인 디지털 서비스 비즈니스를 위한 핵심 인사이트를 도출합니다.
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+
+            <div class="inner">
+                <header class="major"> 
+                    <h1 style="font-size: 35px;  margin:0"> 연구 영역</h1>
+                </header>
+                
+                <section style="border-bottom: 1px solid #e1e1e1; padding-bottom:1em; margin-bottom:1em;"> 
+                    <div class="entry" style="padding:1em;">
+                        <ul style="margin:0; padding:0">
+                            <li>
+                                소셜 미디어 (Social Media)
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                이커머스 (E-commerce)
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                온라인 플랫폼 (Online Platforms)
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                고객 행동 (Customer Behavior)
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                핀테크 (Fintech)
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                제조 및 유통 산업 (Manufacturing and Distribution Industry)
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+
+            <div class="inner">
+                <header class="major"> 
+                    <h1 style="font-size: 35px;  margin:0 "> 연구 방법</h1>
+                </header>
+                
+
+                <section > 
+                    <div class="entry" style="padding:1em;">
+                        <ul style="margin:0; padding:0">
+                            <li>
+                                예측 모델링 (Predictive Analysis) : 다양한 이론에 기반 변수를 추출하여 머신러닝 (DNN, CNN, LSTM, GNN 등) 기반 예측 모델 연구
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                계량 모델링 (Economic Analysis) : 주로 관측 데이터(observational data)를 활용하여 인과 관계를 추론하기 위한 다양한 방법 사용 (Matching, Instrumental Variable, DID, RDD 등)
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                자연어처리 (NLP Applications): 언어 모델(Language Model)을 활용하여 서비스 Application 및 비즈니스 문제 해결을 위한 Downstream task 수행
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                시계열 분석 (Time-Series Applications) : 공정 이상 탐지(Anomaly Detection), 수요 예측(Sales Forecasting) 등 현업 문제 해결을 위한 시계열 데이터 기반 프레임워크 구축 연구
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                생성형 AI (Generative AI Applications): 거대 언어 모델(LLM)을 활용한 최적의 산업 디자인 프레임워크 구축
+                            </li>
+                        </ul>
+
+                    </div>
+                </section>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id = "footer">
+            <div class = "inner">
+              <strong>SoDALAB, 산업경영공학과, 경기대학교</strong>
+              <br>
+              <a>5층 506호, 제2공학관, 수원 캠퍼스, 경기대학교</a>
+              <br>
+              <a> (16227) 광교, 수원시, 경기도 154-42, 대한민국 </a>
+              <br>
+              <a> COPYRIGHT ⓒ2025 Graduate School of KGU. SoDALAB. All rights reserved</a>
+            </div>
+          </section>
+    </body>
+</html>
+

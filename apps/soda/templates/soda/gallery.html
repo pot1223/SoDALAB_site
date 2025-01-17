@@ -12,22 +12,18 @@
     <body>
 
       <header id="header">  
-      
         <div class="innder header_inner">
-  
-            <a href="." class="logo">  
-                <img class = "logo-image" src="{{ url_for('soda.static', filename='images/soda_logo.png') }}"  >
-            </a>
-  
-            <nav id="nav"> 
-                <a href="."> 연구실</a>
-                <a href="{{url_for('soda.people')}}" class >  구성원</a>
-                <a href="{{url_for('soda.public')}}" class > 연구논문</a>
-                <a href="{{url_for('soda.gallery')}}" class="current" >활동사진</a>
-            </nav>
-  
+          <a href="." class="logo">  
+            <img class = "logo-image" src="{{ url_for('soda.static', filename='images/soda_logo.png') }}">
+          </a>
+          <nav id="nav"> 
+            <a href="." class="current"> 연구실</a>
+            <a href="{{url_for('soda.prof')}}" class> 교수</a>
+            <a href="{{url_for('soda.people')}}" class> 구성원</a>
+            <a href="{{url_for('soda.public')}}" class> 연구</a>
+            <a href="{{url_for('soda.gallery')}}" class> 활동사진</a>
+          </nav>
         </div>
-  
       </header>
 
 
@@ -54,6 +50,17 @@
                   </span>
                 </span>               
                 <img class="photo-image" src="{{ url_for('soda.static', filename='images/gallery/sodagroup.jpg') }}"  >
+
+                <span class="entry-theme-photo-head">
+                  <span class="entry-theme-photo-date">
+                    <p style="font-size: 14px;">  </p>
+                    <p style="margin:0; padding:0">참여자: 이소현 교수님 및 송민호, 강진호, 윤민범, 이민경</p>
+                  </span>
+                  <span class="entry-theme-photo-date">
+                    <p style="font-size: 14px;">  </p>
+                    <p style="margin:0; padding:0">장소: 고기꾼김춘배 강남점</p>
+                  </span>
+                </span>
               </span>
             </section>
 
@@ -68,21 +75,43 @@
                   </span>
                 </span>               
                 <img class="photo-image" src="{{ url_for('soda.static', filename='images/gallery/icis.jpg') }}"  >
+                <span class="entry-theme-photo-head">
+                  <span class="entry-theme-photo-date">
+                    <p style="font-size: 14px;">  </p>
+                    <p style="margin:0; padding:0">참여자: 이소현 교수님 및 송민호</p>
+                  </span>
+                  <span class="entry-theme-photo-date">
+                    <p style="font-size: 14px;">  </p>
+                    <p style="margin:0; padding:0">장소: 태국 방콕</p>
+                  </span>
+                </span>
               </span>
             </section>
 
 
             <section class="entry swiper-slide">
+            <section class="entry swiper-slide">
               <span class="entry-theme-photo">
                 <span class="entry-theme-photo-head">
                   <span class="entry-theme-photo-title">
-                    <h2 style="font-size: 1.75em; font-weight: 700; line-height: 1.4; margin:0; padding:0"> SoDA X KBLs workshop </h2>
+                    <h2 style="font-size: 1.75em; font-weight: 700; line-height: 1.4; margin:0; padding:0"> LAB dinner</h2>
                   </span>
                   <span class="entry-theme-photo-date">
-                    <p style="margin:0; padding:0">2월 24일, 2024</p>
+                    <p style="margin:0; padding:0">2월 26일, 2024</p>
                   </span>
                 </span>               
-                <img class="photo-image" src="{{ url_for('soda.static', filename='images/gallery/workshop.jpg') }}"  >
+                <img class="photo-image" src="{{ url_for('soda.static', filename='images/gallery/sodagroup.jpg') }}"  >
+
+                <span class="entry-theme-photo-head">
+                  <span class="entry-theme-photo-date">
+                    <p style="font-size: 14px;">  </p>
+                    <p style="margin:0; padding:0">참여자: 이소현 교수님 및 송민호, 강진호, 윤민범, 이민경</p>
+                  </span>
+                  <span class="entry-theme-photo-date">
+                    <p style="font-size: 14px;">  </p>
+                    <p style="margin:0; padding:0">장소: 고기꾼김춘배 강남점</p>
+                  </span>
+                </span>
               </span>
             </section>
 
@@ -97,10 +126,6 @@
 
           </div>
         </div>
-
-
-
-
 
 
       <br>

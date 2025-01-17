@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <meta charset = "UTF-8" />
+        <title>intro</title>
+        <link rel="stylesheet" href = "{{url_for('soda.static', filename='home.css')}}"/>
+        <link rel="stylesheet" href = "{{url_for('soda.static', filename='prof.css')}}"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    </head>
+
+    <body>
+
+        <header id="header">  
+            <div class="innder header_inner">
+              <a href="." class="logo">  
+                <img class = "logo-image" src="{{ url_for('soda.static', filename='images/soda_logo.png') }}">
+              </a>
+              <nav id="nav"> 
+                <a href="." class="current"> 연구실</a>
+                <a href="{{url_for('soda.prof')}}" class> 교수</a>
+                <a href="{{url_for('soda.people')}}" class> 구성원</a>
+                <a href="{{url_for('soda.public')}}" class> 연구</a>
+                <a href="{{url_for('soda.gallery')}}" class> 활동사진</a>
+              </nav>
+            </div>
+          </header>
+
+
+        
+
+        <section id="main"> 
+            <div class="inner">
+
+                <section > 
+                    <h3 style="font-size: 18px;  font-weight: 700; line-height: 1.4; margin-bottom:0.5em;">교수님</h3>
+                    <div class="gap_2" style="position: absolute; top:9.5em; border-style: solid;  border-color:#e1e1e1; border-width: 1.5px;       width: 65em;"></div>
+                    <div class="gap" style=" position: absolute; top:9.5em; border-style: solid;  border-color:#5372F0; border-width: 1.5px; "></div>
+                    
+                    <div class="entry">
+                        <span class="image-left"> 
+                            <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/prof.jpg') }}"> 
+                        </span>
+                        <div style="font-size: 28px;color:#002E5D; margin:1.5em 0;"> Prof. So-Hyun Lee. PhD</div>
+                        <div style="padding-top:10px; font-size:16px; color:#596276" > 산업경영정보공학과, 경기대학교 </div>
+                        <div style="font-size:16px; color:#596276"> 경기 수원시 영통구 광교산로 154-42, 제2공학관 518호 </div>
+                        <div style="font-size:16px; color:#596276"> Tel: 031-249-9750 </div>
+                        <div style="font-size:16px; color:#596276"> 이메일: sohyun@kyonggi.ac.kr </div>
+                    </div>
+
+                    <div style="padding-bottom:2em">
+                        <div style="font-size:16px;font-weight:bold; color:#002E5D; padding-bottom:1em"> 연구분야 </div>
+                        <ul style="margin:0; padding-left:1em;font-size:14px;">
+                            <li>
+                                Digital Business (Digital gifting, Digital platform, Digital marketing, Online review)
+                            </li>
+                            <p style="font-size: 7px;">  </p>
+                            <li>
+                                Data Science (Machine Learning and Deep Learning), Text mining, Behavioral Research
+                            </li>
+                            <p style="font-size: 7px;">  </p>
+                            <li>
+                                Generative AI
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div style=" padding-bottom:1em">
+                        <div style="font-size:16px;font-weight:bold; color:#002E5D; padding-bottom:1em"> 경력 </div>
+                        <ul style="margin:0; padding-left:1em; font-size:14px;">
+                            <li>
+                                2023/03 – Present: Assistant Professor, Department of Industrial and Management Engineering, Kyonggi University, Suwon, South Korea
+                            </li>
+                            <p style="font-size: 7px;">  </p>
+                            <li>
+                                2021/09 – 2023/02: Associate Professor, School of Management, Xi’an Jiaotong University, Xi’an, China
+                            </li>
+                            <p style="font-size: 7px;">  </p>
+                            <li>
+                                2018/09 – 2021/07: Research Professor, Graduate School of Information, Yonsei University, Seoul, South Korea
+                            </li>
+                            <p style="font-size: 7px;">  </p>
+                            <li>
+                                2017/08 – 2018/08.: Post-doctoral Researcher, Kogod School of Business, American University, Washington, DC, U.S.A.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id = "footer">
+            <div class = "inner">
+              <strong>SoDALAB, 산업경영공학과, 경기대학교</strong>
+              <br>
+              <a>5층 506호, 제2공학관, 수원 캠퍼스, 경기대학교</a>
+              <br>
+              <a> (16227) 광교, 수원시, 경기도 154-42, 대한민국 </a>
+              <br>
+              <a> COPYRIGHT ⓒ2025 Graduate School of KGU. SoDALAB. All rights reserved</a>
+            </div>
+          </section>
+
+     </body>
+</html>

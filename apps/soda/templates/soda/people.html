@@ -9,28 +9,25 @@
         rel="stylesheet">
         
     </head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <body>
         
         <header id="header">  
-      
             <div class="innder header_inner">
-      
-                <a href="." class="logo">  
-                    <img class = "logo-image" src="{{ url_for('soda.static', filename='images/soda_logo.png') }}" s >
-                </a>
-      
-                <nav id="nav"> 
-                    <a href="."> Home</a>
-                    <a href="{{url_for('soda.people')}}" class="current" >  구성원</a>
-                    <a href="{{url_for('soda.public')}}" class > 연구논문</a>
-                    <a href="{{url_for('soda.gallery')}}" class > 활동사진</a>
-                </nav>
-      
+              <a href="." class="logo">  
+                <img class = "logo-image" src="{{ url_for('soda.static', filename='images/soda_logo.png') }}">
+              </a>
+              <nav id="nav"> 
+                <a href="." class="current"> 연구실</a>
+                <a href="{{url_for('soda.prof')}}" class> 교수</a>
+                <a href="{{url_for('soda.people')}}" class> 구성원</a>
+                <a href="{{url_for('soda.public')}}" class> 연구</a>
+                <a href="{{url_for('soda.gallery')}}" class> 활동사진</a>
+              </nav>
             </div>
-      
-        </header>
+          </header>
+
  
  
         <section id="main"> 
@@ -38,161 +35,319 @@
                 <header class="major"> 
                     <h1 style="font-size: 2em; margin: 0 0 0.25em 0;"> 구성원</h1>
                 </header>
-                <br>
+                
                 <section style="border-bottom: 1px solid #e1e1e1;"> 
-                    <h3 style="font-size: 1.35em;  font-weight: 700; line-height: 1.4;">교수 </h3>
-                    <div class="entry">
-                        <span class="image-left-prof" > 
-                            <img class="profile-photo-professor" src="{{ url_for('soda.static', filename='images/people/prof_sohyun.png') }}"> 
-                        </span>
-                        <h4 style="color:rgb(78, 89, 104);    font-size: 2em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 이소현(So-Hyun Lee)</h4>
-                        <div style="padding-top:10px; color:rgb(78, 89, 104);  font-size:1.5em"> 산업경영공학과 조교수 </div>
-                        <div style="color:rgb(78, 89, 104);  font-size:1.5em"> 경기대학교 제2공학관 502호 </div>
-
-                        <div>
-                            <ul style="padding-left: 390px; ">
-                                <li style="color:rgb(78, 89, 104); font-size:1em"> 데이터 마이닝 & 경영 정보 </li>
-                                <li style="color:rgb(78, 89, 104); font-size:1em"> 디지털 비즈니스 </li>
-                                <li style="color:rgb(78, 89, 104); font-size:1em"> 생성형 AI </li>
-                            </ul>
-                        </div>     
-                        <div style="display: flex; align-items: center; gap: 0.5em; margin-top: 5px;">
-                            <span class="material-icons" style=" color:rgb(78, 89, 104);  font-size: 20px;">email</span>
-                            <div style="color:rgb(78, 89, 104);  font-size: 1em;">sohyun@kyonggi.ac.kr</div>
-                        </div>
-
-        
-
-                    </div>
-                </section>
-
-                <section style="border-bottom: 1px solid #e1e1e1;"> 
-                    <h3 style="font-size: 1.35em;  font-weight: 700; line-height: 1.4;">석사</h3>
+                    <h3 style="font-size: 1.35em;  font-weight: 700; line-height: 1.4;">석사과정 연구원</h3>
                     <div class="entry">
                         <span class="image-left"> 
                             <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/minho.jpg') }}"> 
                         </span>
                         <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 송민호</h4>
-                        <div style="padding-top:10px;"> 석사과정학생 </div>
+                        <div style="padding-top:10px;"> 석사 1학기 </div>
                         <div style="font-size:0.95em"> 산업경영공학 </div>
-                        <div>
-                            <ul style="padding-left: 220px; ">
-                                <li style="font-size:0.95em"> 패턴인식 </li>
-                                <li style="font-size:0.95em"> 추천시스템 </li>
-                                <li style="font-size:0.95em"> 인과추론 </li>
-                            </ul>
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 0.5em;">
-                            <span class="material-icons" style="font-size: 20px;">email</span>
-                            <div style="font-size: 0.95em;">pot1223@kyonggi.ac.kr</div>
-                        </div>
-                        <div> <a href="https://atlantic-wound-003.notion.site/31cfdbaf32084320ae887993289b27b3"> 포트폴리오 </a></div>   
-                        
+                        <div style="font-size:0.95em"> E-mail: pot1223@kyonggi.ac.kr </div>
+                        <div style="font-size:0.95em">관심연구분야: Pattern Recognition, Causal Inference, Recommender Systems</div>
+                    </div>
+                    
+                    <div style="font-size:0.95em; padding-bottom:1em">
+                        <ul style="margin:0; padding-left:1em">
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                Sang-hyeak Yoon, So-Hyun Lee, Minho Song "Designing Effective Elevator TV Ads : An Experimental Approach to Visual Complexity and information accessibility Integration", Post-ICIS KrAIS Research Workshop, Bangkok, Thailand, December 2024. 
+                            </li>
 
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                송민호, 강진호, 이소현 "ODR 서비스차량 지연 시 대기허용범위 확대를 위한 주요 요인 도출: 텍스트 마이닝 기법", 한국전자거래학회&한국스마트미디어학회 춘계학술대회, 2024.05. 
+                            </li>
 
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                강진호, 송민호, 이소현 "생성형 AI 부작용 요인 도출 및 대응방안 제안: 텍스트 마이닝 활용", 한국경영정보학회 춘계학술대회, 2024.05. 
+                            </li>
+
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                강진호, 송민호, 윤여진, 이소현 "미래 전력 수요 예측: AI, 전기차 보급률, 데이터센터 변수 활용", 한국지능정보시스템학회 추계학술대회, 2024.10. 
+                            </li>
+
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                송민호, 박승연 "MQL 데이터 기반 B2B 영업기회 창출 예측 모델 개발", LG Aimers 4기. 2024/02. <span style="color:red;">(844팀중 77위, 상위 10%)</span></li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                강진호, 양태성, 송민호, 최재성, 윤여진 "생성형 AI의 적대적 프롬프트 탐지 모델 개발 및 활용", 연세대학교 산업사회문제 해결을 위한 지역사회 경험학습 공모전, 2024/12.  <span style="color:red;">(최우수상)</span>
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                송민호, 김연지, 문성욱, 한수현, 송승희, 오종석, 노영진, 이재현 "가장 안전한 길로 안내하는 통로, 안전 재난 알림 서비스 대피로", 한국대학생IT경영학회 IT 창업 컨퍼런스, 2023/12. <span style="color:red;">(최우수상)</span>
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                송민호, 김예준, 유준우, 박종우 "자율주행 차량의 건전성 예측 및 관리(PHM) 도입" 경기대학교 산업인공지능 해커톤, 2023/12. <span style="color:red;">(금상, 2등)</span>
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                송민호, "Generative AI를 활용한 K-12 교육 제품 기획", (주)매스프레소 산학협력, 2023/08~2023/09.
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                송민호, "카카오톡 단체채팅방 대화내용을 기반으로 팀원 기여도를 평가하는 앱/웹 프로토타입 개발", (주)MAYCAN 산학협력, 2021/02~2021/04.
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                송민호, 김도희, 김수연, 김수현, 박근영, 안민경, 임찬, 김라온 "대학생의 심플한 팀플을 위한 ALL in ONE 협업툴 팀플+", 한국대학생IT경영학회 IT 창업 컨퍼런스, 2021/05. <span style="color:red;">(장려상)</span>
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                송민호, 김동호, 김은홍, 이성원, 오현우 "사회 이슈가 반영된 독립 서적 추천 판매 서비스, 담책", 한국컴퓨터교육학회 2024 캡스톤 디자인 및 AI 해커톤 경진대회, 2024/10. <span style="color:red;">(장려상)</span>
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                송민호, 한동엽 "푸드트럭 행사 최적 입지 선정", 군산시 청년정책 아이디어 공모전, 2021/09. <span style="color:red;">(장려상)</span>
+                            </li>
+                            <p style="font-size: 14px;"> </p>
+                            <li>
+                                송민호, 양태성, 남은지, 심민지 "읽히지 못한 독립서적이 주목받을 기회를 마련하기 위한 독립서적 추천 콘텐츠 활용방안 제안", 국립중앙도서관 2024 도서관 데이터 활용 공모전, 2024/09. (본선진출)
+                            </li>
+                        </ul>
                     </div>
                 </section>
 
 
                 <section  style="border-bottom: 1px solid #e1e1e1;"> 
-                    <h3 style="font-size: 1.35em;  font-weight: 700; line-height: 1.4;">학부생</h3>
+                    <h3 style="font-size: 1.35em;  font-weight: 700; line-height: 1.4;">학부 연구생</h3>
+                    <div class="entry">
+                        <span class="image-left"> 
+                            <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/minbeom.jpg') }}"> 
+                        </span>
+                        <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 윤민범</h4>
+                        <div style="padding-top:10px;"> 학부 4학년 </div>
+                        <div style="font-size:0.95em"> 산업경영공학  </div>
+                        <div style="font-size:0.95em"> E-mail: idyllicrjw@gmail.com </div>
+                        <div style="font-size:0.95em">관심연구분야: Digital Business, Data Mining, Data Analytics, Generative AI</div>
+                    </div>
+                    <div style="font-size:0.95em; padding-bottom:1em">
+                        <ul style="margin:0; padding-left:1em">
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                윤민범, 류기범, 이소현 "수소차 활성화를 위한 주요 요인 도출: 혼합연구방법론", 한국경영정보학회 춘계학술대회, 2024/05.
+                            </li>
+                            <p style="font-size: 14px;"> </p>
+                            <li>
+                                류기범, 윤민범, 이소현 "수소차 활성화를 위한 주요 요인 도출과 전략 제안: 텍스트 마이닝과 인터뷰 혼합방법론", 경영정보학연구, 26(4), 2024/11. 23-44
+                            </li>
+                            <p style="font-size: 14px;"> </p>
+                            <li>
+                                양태성, 윤민범, 최재성, 이소현 "이커머스 플랫폼에서 리뷰와 평점 불일치 문제 해결: 감성 및 시각화 분석", 한국경영정보학회 추계학술대회, 2024/11.
+                            </li>
+                            <p style="font-size: 14px;"> </p>
+                            <li>
+                                윤민범, 김선규, 이민경 "최신 취업시장 키워드 분석을 통한 핵심 디지털 역량 제안", 연세대학교 정보대학원 제 2회 일자리 문제 해결을 위한 지역 사회 경험학습 공모전, 2023/12. <span style="color:red;">(우수상)</span>
+                            </li>
+                            <p style="font-size: 14px;"> </p>
+        
+                            <li>
+                                강진호, 양태성, 윤민범 "생성형 AI를 활용한 소상공인 마케팅 방안 제안", 경기대학교 pages 지역사회공모전, 2024/11. <span style="color:red;">(장려상)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
 
-                    <div class="entry" style="width:50%; float: left; min-height: 11.25rem;">
+
+
+                <section  style="border-bottom: 1px solid #e1e1e1;"> 
+                    
+                    <div class="entry">
+                        <span class="image-left"> 
+                            <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/jinho.jpg') }}"> 
+                        </span>
+                        <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 강진호</h4>
+                        <div style="padding-top:10px;"> 학부 4학년 </div>
+                        <div style="font-size:0.95em"> 산업경영공학 </div>
+                        <div style="font-size:0.95em"> E-mail: jinho5080@gmail.com</div>
+                        <div style="font-size:0.95em"> 관심연구분야: Causal ML, Anomaly detection, Demand forecasting, NLP</div>
+                    </div>
+                    <div style="font-size:0.95em; padding-bottom:1em">
+                        <ul style="margin:0; padding-left:1em">
+
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                강진호, 송민호, 이소현 "생성형 AI 부작용 요인 도출 및 대응방안 제안: 텍스트 마이닝 활용", 한국경영정보학회 춘계학술대회, 2024.05. 
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                강진호, 송민호, 윤여진, 이소현 "미래 전력 수요 예측: AI, 전기차 보급률, 데이터센터 변수 활용", 한국지능정보시스템학회 추계학술대회, 2024.10. 
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                허원진, 강진호, 이소현 "클러스터링 기법을 이용한 이륜차 사고의 특징 분류", 한국지식경영학회, 2024/03.
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                송민호, 강진호, 이소현 "ODR 서비스차량 지연 시 대기허용범위 확대를 위한 주요 요인 도출: 텍스트 마이닝 기법", 한국전자거래학회&한국스마트미디어학회 춘계학술대회, 2024.05. 
+                            </li>
+
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                강진호, 강충원, 김도연, 송지민 "디스플레이 공정과정 이상탐지 모델 개발", LG Aimers 5기. 2024/09. <span style="color:red;">(698팀 중 33위, 상위 5%)</span>  
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                강진호, 양태성, 윤민정, 박지현 "공연 제작 단계에서 최적의 의사결정을 위한 공연 수명주기 예측", KOPIS 빅데이터 분석공모전, 2024/09. <span style="color:red;">(2등)</span>
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                강진호, 양태성, 송민호, 최재성, 윤여진 "생성형 AI의 적대적 프롬프트 탐지 모델 개발 및 활용", 연세대학교 산업사회문제 해결을 위한 지역사회 경험학습 공모전, 2024/12. <span style="color:red;">(최우수상)</span>
+                            </li>
+                            <p style="font-size: 14px;"> </p>
+                            <li>
+                                강진호, 양태성, 윤민범 "생성형 AI를 활용한 소상공인 마케팅 방안 제안", 경기대학교 pages 지역사회공모전, 2024/11. <span style="color:red;">(장려상)</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </section>
+
+                <section  style="border-bottom: 1px solid #e1e1e1;"> 
+                    
+                    <div class="entry">
                         <span class="image-left"> 
                             <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/Taesung.jpg') }}"> 
                         </span>
-                        <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 양태성
-
-                        </h4>
-                        <div style="padding-top:10px;"> 학부연구생 </div>
+                        <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 양태성</h4>
+                        <div style="padding-top:10px;"> 학부 4학년 </div>
                         <div style="font-size:0.95em"> 응용통계학 </div>
-                        <ul style="padding-left: 220px; ">
-                            <li style="font-size:0.95em"> 자연어 처리 </li>
-                            <li style="font-size:0.95em"> 텍스트 마이닝 </li>
-                        </ul>
-                        <div style="display: flex; align-items: center; gap: 0.5em;">
-                            <span class="material-icons" style="font-size: 20px;">email</span>
-                            <div style="font-size: 0.95em;">bigcastle121@kyonggi.ac.kr</div>
-                        </div>
-                        <div> <a href="https://faithful-debt-e9b.notion.site/Taeseong-Yang-16c3c6a1c04d80049054d4f4cfc895ac"> 포트폴리오</a></div>   
+                        <div style="font-size:0.95em"> email: bigcastle121@kyonggi.ac.kr</div>
+                        <div style="font-size:0.95em">관심연구분야: NLP, Text Mining</div>
                     </div>
+                    <div style="font-size:0.95em; padding-bottom:1em">
+                        <ul style="margin:0; padding-left:1em">
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                양태성, 윤민범, 최재성, 이소현 "이커머스 플랫폼에서 리뷰와 평점 불일치 문제 해결: 감성 및 시각화 분석", 한국경영정보학회 추계학술대회, 2024/11.
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                양태성 "소득 예측 AI 해커톤", 데이콘, 2024/04. <span style="color:red;">(772팀 중 42위, 상위 5%)</span>
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                양태성 "고객 대출등급 분류 AI 해커톤", 데이콘, 2024/02. <span style="color:red;">(785팀 중 63위, 상위 10%)</span>
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                양태성, 박주연, 이도훈, 임나연, 정재연 "소비자의 구매의사결정 도움 및 브랜드 판매증진", 멀티캠퍼스 금융 마케팅 분석 대회, 2024/04. <span style="color:red;">(최우수상)</span>
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                 양태성, 강진호, 송민호, 최재성, 윤여진 "생성형 AI의 적대적 프롬프트 탐지 모델 개발 및 활용", 연세대학교 산업사회문제 해결을 위한 지역사회 경험학습 공모전, 2024/12. <span style="color:red;">(최우수상)</span>
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                양태성, 강진호, 윤민정, 박지현 "공연 제작 단계에서 최적의 의사결정을 위한 공연 수명주기 예측", KOPIS 빅데이터 분석공모전, 2024/09. <span style="color:red;">(2등)</span>
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                양태성 "소상공인을 위한 수요 예측", 경기대학교 통계자료분석대회, 2024/11. <span style="color:red;">(우수상)</span>
+                            </li>
+                            <p style="font-size: 14px;"> </p>
+                            <li>
+                                양태성, 강진호, 윤민범 "생성형 AI를 활용한 소상공인 마케팅 방안 제안", 경기대학교 pages 지역사회공모전, 2024/11. <span style="color:red;">(장려상)</span>
+                            </li>
+                            <p style="font-size: 14px;"> </p>
+                            <li>
+                                양태성, 송민호, 남은지, 심민지 "읽히지 못한 독립서적이 주목받을 기회를 마련하기 위한 독립서적 추천 콘텐츠 활용방안 제안", 국립중앙도서관 2024 도서관 데이터 활용 공모전, 2024/09. (본선진출)
+                            </li>
+                        </ul>
+                    </div>
+                </section>
 
-                    <div class="entry" style="width:50%; min-height: 11.25rem;">
+
+                <section  style="border-bottom: 1px solid #e1e1e1;"> 
+                    
+                    <div class="entry">
                         <span class="image-left"> 
                             <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/Jaesung.jpg') }}"> 
                         </span>
                         <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 최재성</h4>
-                        <div style="padding-top:10px;"> 학부연구생 </div>
+                        <div style="padding-top:10px;"> 학부 4학년 </div>
                         <div style="font-size:0.95em"> 경영정보학 </div>
-                        <ul style="padding-left: 220px; ">
-                            <li style="font-size:0.95em"> 머신러닝 </li>
-                            <li style="font-size:0.95em"> 이커머스 </li>
-                        </ul>
-                        <div style="display: flex; align-items: center; gap: 0.5em;">
-                            <span class="material-icons" style="font-size: 20px;">email</span>
-                            <div style="font-size: 0.95em;">cjaes01@kyonggi.ac.kr</div>
-                        </div>
-                        <div> <a href="https://www.notion.so/Taeseong-Yang-16c3c6a1c04d80049054d4f4cfc895ac"> 포트폴리오</a></div>   
+                        <div style="font-size:0.95em"> email: cjaes01@kyonggi.ac.kr</div>
+                        <div style="font-size:0.95em">관심연구분야: ML, E-commerce</div>
                     </div>
+                    <div style="font-size:0.95em; padding-bottom:1em">
+                        <ul style="margin:0; padding-left:1em">
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                양태성, 윤민범, 최재성, 이소현 "이커머스 플랫폼에서 리뷰와 평점 불일치 문제 해결: 감성 및 시각화 분석", 한국경영정보학회 추계학술대회, 2024/11.
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                 최재성, 나영준, 조혜원, Danish "Autonomous Driving Based Electric Car for Children", KCB Brunei Campus Global Software Hackathon (Python AI Course), 2024.08. <span style="color:red;">(대상)</span>
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                최재성, 강진호, 양태성, 송민호, 윤여진 "생성형 AI의 적대적 프롬프트 탐지 모델 개발 및 활용", 연세대학교 산업사회문제 해결을 위한 지역사회 경험학습 공모전, 2024/12. <span style="color:red;">(최우수상)</span>
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                 최재성, 윤여진, 박유진 "경기도 전통시장 활성화 프로젝트: 메타마켓" 경기대학교 pages 지역사회공모전, 2024/12. <span style="color:red;">(장려상)</span>
+                            </li>
 
-                    <div class="entry" style="width:50%; min-height: 11.25rem;">
+                        </ul>
+                    </div>
+                </section>
+
+                <section  style="border-bottom: 1px solid #e1e1e1;"> 
+                    <div class="entry">
                         <span class="image-left"> 
                             <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/yeojin.jpg') }}"> 
                         </span>
                         <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 윤여진</h4>
-                        <div style="padding-top:10px;"> 학부연구생 </div>
+                        <div style="padding-top:10px;"> 학부 3학년 </div>
                         <div style="font-size:0.95em"> 경영정보학 </div>
-                        <ul style="padding-left: 220px; ">
-                            <li style="font-size:0.95em"> 머신러닝 </li>
-                            <li style="font-size:0.95em"> 예측 </li>
-                        </ul>
-                        <div style="display: flex; align-items: center; gap: 0.5em;">
-                            <span class="material-icons" style="font-size: 20px;">email</span>
-                            <div style="font-size: 0.95em;">xnejfc@kyonggi.ac.kr</div>
-                        </div>
-                        <div> <a href="https://fluffy-fibre-11b.notion.site/1731aac8c7ad8097a266cfd242ed462e"> 포트폴리오</a></div>   
+                        <div style="font-size:0.95em"> email:xnejfc@kyonggi.ac.kr</div>
+                        <div style="font-size:0.95em">관심연구분야: ML, Forecasting</div>
                     </div>
-
-
+                    <div style="font-size:0.95em; padding-bottom:1em">
+                        <ul style="margin:0; padding-left:1em">
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                강진호, 송민호, 윤여진, 이소현 "미래 전력 수요 예측: AI, 전기차 보급률, 데이터센터 변수 활용", 한국지능정보시스템학회 추계학술대회, 2024.10. 
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                윤여진, 최재성, 강진호, 양태성, 송민호 "생성형 AI의 적대적 프롬프트 탐지 모델 개발 및 활용", 연세대학교 산업사회문제 해결을 위한 지역사회 경험학습 공모전, 2024/12. <span style="color:red;">(최우수상)</span>
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                윤여진, 최재성, 박유진 "경기도 전통시장 활성화 프로젝트: 메타마켓" 경기대학교 pages 지역사회공모전, 2024/12. <span style="color:red;">(장려상)</span>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
+
 
 
                 <section> 
                     <h3 style="font-size: 1.35em;  font-weight: 700; line-height: 1.4;">졸업생</h3>
 
-
-                    <div class="entry" style= "width:50%; float: left; min-height: 11.25rem;">
-                        <span class="image-left"> 
-                            <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/minbeom.png') }}"> 
-                        </span>
-                        <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 윤민범</h4>
-                        <div style="padding-top:10px;"> 2025년 2월 졸업 </div>
-                        <div style="font-size:0.95em"> 현재: 연세대학교 정보대학원 소속 </div>
-                    </div>
-
-                    <div class="entry" style= "width:50%;  min-height: 11.25rem;">
-                        <span class="image-left"> 
-                            <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/Jinho.jpg') }}"> 
-                        </span>
-                        <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 강진호</h4>
-                        <div style="padding-top:10px;"> 2025년 2월 졸업 </div>
-                        <div style="font-size:0.95em"> 현재: 연세대학교 정보대학원 소속 </div>
-                    </div>
-
-                    <div class="entry" style= "width:50%; min-height: 11.25rem;">
+                    <div class="entry">
                         <span class="image-left"> 
                             <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/Minkyung.png') }}"> 
                         </span>
-                        <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 이민경 </h4>
-                        <div style="padding-top:10px;"> 2024년 1월 졸업 </div>
-                        <div style="font-size:0.95em"> 현재: 해외유학중  </div>
+                        <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 이민경</h4>
+                        <div style="padding-top:10px;"> 학부 4학년 </div>
+                        <div style="font-size:0.95em"> 경영정보학 </div>
+                        <div style="font-size:0.95em"> 소속: 유학중 </div>
                     </div>
+
                 </section>
-
-
 
             </div>
         </section>
+
 
 
         <section id = "footer">

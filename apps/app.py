@@ -8,9 +8,10 @@ from flask import Flask, redirect, url_for
 
 db = SQLAlchemy()
 
-def create_app(config_key):
+
+def create_app(config_key='local'):
     app = Flask(__name__)
-    app.config.from_object(config[config_key])
+    app.config.from_object(config[config_key ])
 
     db.init_app(app)
     Migrate(app,db)

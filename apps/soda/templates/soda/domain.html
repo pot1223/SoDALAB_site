@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <meta charset = "UTF-8" />
+        <title>intro</title>
+        <link rel="stylesheet" href = "{{url_for('soda.static', filename='home.css')}}"/>
+        <link rel="stylesheet" href = "{{url_for('soda.static', filename='domain.css')}}"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    </head>
+
+    <body>
+
+        <header id="header">  
+            <div class="innder header_inner">
+              <a href="." class="logo">  
+                <img class = "logo-image" src="{{ url_for('soda.static', filename='images/soda_logo.png') }}">
+              </a>
+              <nav id="nav"> 
+                <a href="." class="current"> 연구실</a>
+                <a href="{{url_for('soda.prof')}}" class> 교수</a>
+                <a href="{{url_for('soda.people')}}" class> 구성원</a>
+                <a href="{{url_for('soda.public')}}" class> 연구</a>
+                <a href="{{url_for('soda.gallery')}}" class> 활동사진</a>
+              </nav>
+            </div>
+          </header>
+
+
+        <section id="main"> 
+        <div class="inner">
+            <header class="major"> 
+                <h1 style="font-size: 35px; margin:0"> 세부 연구 분야</h1>
+            </header>
+        
+            <section > 
+                
+                <div class="entry" style= "width:50%; float: left; min-height: 11.25rem;  text-align: center">
+                    <span class="image-left"> 
+                        <img class="profile-photo" src="{{ url_for('soda.static', filename='images/soda_nlp.png') }}"> 
+                    </span>
+                    <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 자연어 처리</h4>
+                    <div style="padding-top:10px;     font-size: 14px"> 거대언어모델 </div>
+                    <div style="    font-size: 14px"> 주요인 분석 </div>
+                    <div style="    font-size: 14px">  감정 분석 </div>
+                </div>
+
+                <div class="entry" style= "width:50%;  min-height: 11.25rem; text-align: center">
+                    <span class="image-left"> 
+                        <img class="profile-photo" src="{{ url_for('soda.static', filename='images/soda_recommender.png') }}"> 
+                    </span>
+                    <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;">추천 시스템</h4>
+                    <div style="padding-top:10px; font-size: 14px"> 콘텐츠 기반 필터링 </div>
+                    <div style="font-size:0.95em; font-size: 14px"> 협업 필터링 </div>
+                    <div style="font-size:0.95em; font-size: 14px"> 그래픽 모델 </div>
+                </div>
+
+                <div class="entry" style= "width:50%; float: left; min-height: 11.25rem; text-align: center">
+                    <span class="image-left"> 
+                        <img class="profile-photo" src="{{ url_for('soda.static', filename='images/soda_forecast.png') }}"> 
+                    </span>
+                    <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;">  예측 </h4>
+                    <div style="padding-top:10px; font-size: 14px"> 머신러닝/딥러닝 </div>
+                    <div style="font-size:0.95em; font-size: 14px"> 시계열 예측  </div>
+                    <div style="font-size:0.95em; font-size: 14px"> 이상 탐지  </div>
+                </div>        
+                
+                <div class="entry" style= "width:50%; min-height: 11.25rem; text-align: center">
+                    <span class="image-left"> 
+                        <img class="profile-photo" src="{{ url_for('soda.static', filename='images/soda_pattern.png') }}"> 
+                    </span>
+                    <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 분석 </h4>
+                    <div style="padding-top:10px; font-size: 14px"> 패턴 인식 </div>
+                    <div style="font-size:0.95em; font-size: 14px"> 인과 추론  </div>
+                    <div style="font-size:0.95em; font-size: 14px"> 근사 추론  </div>
+                </div>            
+
+
+
+            </section>
+        </div>
+        </section>
+
+
+        <section id = "footer">
+            <div class = "inner">
+              <strong>SoDALAB, 산업경영공학과, 경기대학교</strong>
+              <br>
+              <a>5층 506호, 제2공학관, 수원 캠퍼스, 경기대학교</a>
+              <br>
+              <a> (16227) 광교, 수원시, 경기도 154-42, 대한민국 </a>
+              <br>
+              <a> COPYRIGHT ⓒ2025 Graduate School of KGU. SoDALAB. All rights reserved</a>
+            </div>
+          </section>
+
+     </body>
+</html>
