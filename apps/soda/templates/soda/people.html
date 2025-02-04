@@ -21,7 +21,11 @@
               <nav id="nav"> 
                 <a href="." class="current"> 연구실</a>
                 <a href="{{url_for('soda.prof')}}" class> 교수</a>
-                <a href="{{url_for('soda.people')}}" class> 구성원</a>
+                <a href="{{url_for('soda.people')}}" class="current_2"> 구성원</a>
+                <ul class = "dropdown_2">
+                  <a href="{{url_for('soda.people')}}" class="detail_2"> 재학생 </a>
+                  <a href="{{url_for('soda.graduate')}}" class="detail_2"> 졸업생 </a>
+                </ul> 
                 <a href="{{url_for('soda.public')}}" class> 연구</a>
                 <a href="{{url_for('soda.gallery')}}" class> 활동사진</a>
               </nav>
@@ -45,7 +49,7 @@
                         <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 송민호</h4>
                         <div style="padding-top:10px;"> 석사 1학기 </div>
                         <div style="font-size:0.95em"> 산업경영공학 </div>
-                        <div style="font-size:0.95em"> E-mail: pot1223@kyonggi.ac.kr </div>
+                        <div style="font-size:0.95em"> E-mail: pot1223@naver.com </div>
                         <div style="font-size:0.95em">관심연구분야: Pattern Recognition, Causal Inference, Recommender Systems</div>
                     </div>
                     
@@ -263,6 +267,10 @@
                             <li>
                                 양태성, 송민호, 남은지, 심민지 "읽히지 못한 독립서적이 주목받을 기회를 마련하기 위한 독립서적 추천 콘텐츠 활용방안 제안", 국립중앙도서관 2024 도서관 데이터 활용 공모전, 2024/09. (본선진출)
                             </li>
+                            <p style="font-size: 14px;"> </p>
+                            <li>
+                                김동건, 백민혁, 양태성, 황승현 "라이브 커머스를 활용한 공방거리 활성화 프로젝트", 2023 동작 LINK 상권 활성화 라이브커머스 아이디어 제시 공모전, 2023/09. (본선진출)
+                            </li>
                         </ul>
                     </div>
                 </section>
@@ -337,35 +345,62 @@
                 </section>
 
 
-
-                <section> 
-                    <h3 style="font-size: 1.35em;  font-weight: 700; line-height: 1.4;">졸업생</h3>
-
+                <section  style="border-bottom: 1px solid #e1e1e1;"> 
                     <div class="entry">
                         <span class="image-left"> 
-                            <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/Minkyung.png') }}"> 
+                            <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/jinseo.jpg') }}"> 
                         </span>
-                        <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 이민경</h4>
+                        <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 박진서</h4>
                         <div style="padding-top:10px;"> 학부 4학년 </div>
                         <div style="font-size:0.95em"> 경영정보학 </div>
-                        <div style="font-size:0.95em"> 소속: 유학중 </div>
+                        <div style="font-size:0.95em"> email:j2nseo@gmail.com</div>
+                        <div style="font-size:0.95em">관심연구분야: ML, Time series analysis, Generative AI</div>
                     </div>
                     <div style="font-size:0.95em; padding-bottom:1em">
                         <ul style="margin:0; padding-left:1em">
                             <p style="font-size: 14px;">  </p>
                             <li>
-                                송민호, 강진호, 이민경, 이소현 "ODR 서비스차량 지연 시 대기허용범위 확대를 위한 주요 요인 도출: 텍스트 마이닝 기법", 한국전자거래학회&한국스마트미디어학회 춘계학술대회, 2024.05. 
+                                최수현, 이민정, 박진서, 서연호, 문재현, “메타버스와 AI 추천 서비스를 활용한 국내 대표 키오스크 사용 서비스 안내 개발”,  한국정보처리학회 추계학술대회, 2023/11.
                             </li>
-                            <p style="font-size: 14px;"> </p>
+                            <p style="font-size: 14px;">  </p>
                             <li>
-                                이민경, 윤민범, 김선규 "최신 취업시장 키워드 분석을 통한 핵심 디지털 역량 제안", 연세대학교 정보대학원 제 2회 일자리 문제 해결을 위한 지역 사회 경험학습 공모전, 2023/12. <span style="color:red;">(우수상)</span>
+                                허예찬, 박진서, 조은영, 정영균, 조석헌, “날씨 데이터를 활용한 인공지능 알고리즘 기반 뉴욕시 시간별 교통사고 발생건수 예측 모델”, 한국통신학회 추계학술대회, 2024/11.
                             </li>
-      
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                박진서, 이정윤, 김은우, “과소비, 이대로 괜찮은가 : 연령별 소비 패턴에 관하여”, 국민대학교 파이썬을 활용한 데이터 시각화 프로그램, 2024/07~2024/08. <span style="color:red;">(대상)</span>
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                허예찬, 박진서, 조은영, 정영균, “날씨 데이터를 활용한 인공지능 알고리즘 기반 뉴욕시 시간별 교통사고 발생건수 예측 모델”, Qualcomm Institute, UCSD , 2024/07~2024/08.
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                최수현, 이민정, 박진서, 서연호, “메타버스와 AI 추천 서비스를 활용한 국내 대표 키오스크 사용 서비스 안내 개발”,  2023년 한이음 ICT멘토링 공모전, 2023/04~2023/11. 
+                            </li>
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                장서진, 박진서, 박승연, 문예진, “Plannie : Chat gpt 기반 맞춤형 공부 일정 관리 앱 개발”, 2024 경기대학교 SW 페스타, 2024/04~2024/11.
+                            </li>
+
                         </ul>
                     </div>
-
-
                 </section>
+
+                <section  style="border-bottom: 1px solid #e1e1e1;"> 
+                    <div class="entry">
+                        <span class="image-left"> 
+                            <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/jungmin.jpg') }}"> 
+                        </span>
+                        <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 박정민</h4>
+                        <div style="padding-top:10px;"> 학부 4학년 </div>
+                        <div style="font-size:0.95em"> 경영정보학 </div>
+                        <div style="font-size:0.95em"> email:baruneepark@kyonggi.ac.kr</div>
+                        <div style="font-size:0.95em">관심연구분야: Data analysis, E-commerce</div>
+                    </div>
+                </section>
+
+
 
             </div>
         </section>
@@ -374,7 +409,7 @@
 
         <section id = "footer">
             <div class = "inner">
-              <strong>SoDALAB, 산업경영공학과, 경기대학교</strong>
+              <strong>SoDALAB, 산업경영정보공학과, 경기대학교</strong>
               <br>
               <a>5층 506호, 제2공학관, 수원 캠퍼스, 경기대학교</a>
               <br>
@@ -386,5 +421,27 @@
 
     </body>
 
-    
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+          const nav = document.getElementById("nav");
+          const currentLink_2 = nav.querySelector(".current_2");
+          const dropdown_2 = nav.querySelector(".dropdown_2");
+
+
+          currentLink_2.addEventListener("click", (e) => {
+            e.preventDefault(); 
+            dropdown_2.style.display = dropdown_2.style.display === "block" ? "none" : "block";
+            });
+
+          
+          document.addEventListener("click", (e) => {
+            if (!nav.contains(e.target)) {
+              dropdown_2.style.display = "none";
+            }
+          });
+
+        });
+
+    </script>
 </html>

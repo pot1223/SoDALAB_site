@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <meta charset = "UTF-8" />
+        <title>people</title>
+        <link rel="stylesheet" href = "{{url_for('soda.static', filename='home.css')}}"/>
+        <link rel="stylesheet" href = "{{url_for('soda.static', filename='people.css')}}"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <body>
+        
+        <header id="header">  
+            <div class="innder header_inner">
+              <a href="." class="logo">  
+                <img class = "logo-image" src="{{ url_for('soda.static', filename='images/soda_logo.png') }}">
+              </a>
+              <nav id="nav"> 
+                <a href="." class="current"> 연구실</a>
+                <a href="{{url_for('soda.prof')}}" class> 교수</a>
+                <a href="{{url_for('soda.people')}}" class="current_2"> 구성원</a>
+                <ul class = "dropdown_2">
+                  <a href="{{url_for('soda.people')}}" class="detail_2"> 재학생 </a>
+                  <a href="{{url_for('soda.graduate')}}" class="detail_2"> 졸업생 </a>
+                </ul> 
+                <a href="{{url_for('soda.public')}}" class> 연구</a>
+                <a href="{{url_for('soda.gallery')}}" class> 활동사진</a>
+              </nav>
+            </div>
+          </header>
+
+ 
+ 
+        <section id="main"> 
+            <div class="inner">
+                <header class="major"> 
+                    <h1 style="font-size: 2em; margin: 0 0 0.25em 0;"> 구성원</h1>
+                </header>
+        
+                <section> 
+                    <h3 style="font-size: 1.35em;  font-weight: 700; line-height: 1.4;">졸업생</h3>
+
+                    <div class="entry">
+                        <span class="image-left"> 
+                            <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/Minkyung.png') }}"> 
+                        </span>
+                        <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> 이민경</h4>
+                        <div style="padding-top:10px;"> 학부 4학년 </div>
+                        <div style="font-size:0.95em"> 경영정보학 </div>
+                        <div style="font-size:0.95em"> 소속: 유학중 </div>
+                    </div>
+                    <div style="font-size:0.95em; padding-bottom:1em">
+                        <ul style="margin:0; padding-left:1em">
+                            <p style="font-size: 14px;">  </p>
+                            <li>
+                                송민호, 강진호, 이민경, 이소현 "ODR 서비스차량 지연 시 대기허용범위 확대를 위한 주요 요인 도출: 텍스트 마이닝 기법", 한국전자거래학회&한국스마트미디어학회 춘계학술대회, 2024.05. 
+                            </li>
+                            <p style="font-size: 14px;"> </p>
+                            <li>
+                                이민경, 윤민범, 김선규 "최신 취업시장 키워드 분석을 통한 핵심 디지털 역량 제안", 연세대학교 정보대학원 제 2회 일자리 문제 해결을 위한 지역 사회 경험학습 공모전, 2023/12. <span style="color:red;">(우수상)</span>
+                            </li>
+      
+                        </ul>
+                    </div>
+
+
+                </section>
+
+            </div>
+        </section>
+
+
+
+        <section id = "footer">
+            <div class = "inner">
+              <strong>SoDALAB, 산업경영정보공학과, 경기대학교</strong>
+              <br>
+              <a>5층 506호, 제2공학관, 수원 캠퍼스, 경기대학교</a>
+              <br>
+              <a> (16227) 광교, 수원시, 경기도 154-42, 대한민국 </a>
+              <br>
+              <a> COPYRIGHT ⓒ2025 Graduate School of KGU. SoDALAB. All rights reserved</a>
+            </div>
+          </section>
+
+    </body>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+          const nav = document.getElementById("nav");
+          const currentLink_2 = nav.querySelector(".current_2");
+          const dropdown_2 = nav.querySelector(".dropdown_2");
+
+
+          currentLink_2.addEventListener("click", (e) => {
+            e.preventDefault(); 
+            dropdown_2.style.display = dropdown_2.style.display === "block" ? "none" : "block";
+            });
+
+          
+          document.addEventListener("click", (e) => {
+            if (!nav.contains(e.target)) {
+              dropdown_2.style.display = "none";
+            }
+          });
+
+        });
+
+    </script>
+</html>

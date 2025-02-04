@@ -19,7 +19,11 @@
           <nav id="nav"> 
             <a href="." class="current"> 연구실</a>
             <a href="{{url_for('soda.prof')}}" class> 교수</a>
-            <a href="{{url_for('soda.people')}}" class> 구성원</a>
+            <a href="{{url_for('soda.people')}}" class="current_2"> 구성원</a>
+            <ul class = "dropdown_2">
+              <a href="{{url_for('soda.people')}}" class="detail_2"> 재학생 </a>
+              <a href="{{url_for('soda.graduate')}}" class="detail_2"> 졸업생 </a>
+            </ul> 
             <a href="{{url_for('soda.public')}}" class> 연구</a>
             <a href="{{url_for('soda.gallery')}}" class> 활동사진</a>
           </nav>
@@ -54,7 +58,7 @@
                 <span class="entry-theme-photo-head">
                   <span class="entry-theme-photo-date">
                     <p style="font-size: 14px;">  </p>
-                    <p style="margin:0; padding:0">참여자: 이소현 교수님 및 송민호, 강진호, 윤민범, 이민경</p>
+                    <p style="margin:0; padding:0">참여자(5명): 이소현 교수님 및 송민호, 강진호, 윤민범, 이민경</p>
                   </span>
                   <span class="entry-theme-photo-date">
                     <p style="font-size: 14px;">  </p>
@@ -78,7 +82,7 @@
                 <span class="entry-theme-photo-head">
                   <span class="entry-theme-photo-date">
                     <p style="font-size: 14px;">  </p>
-                    <p style="margin:0; padding:0">참여자: 이소현 교수님 및 송민호</p>
+                    <p style="margin:0; padding:0">참여자(2명): 이소현 교수님 및 송민호</p>
                   </span>
                   <span class="entry-theme-photo-date">
                     <p style="font-size: 14px;">  </p>
@@ -94,28 +98,28 @@
               <span class="entry-theme-photo">
                 <span class="entry-theme-photo-head">
                   <span class="entry-theme-photo-title">
-                    <h2 style="font-size: 1.75em; font-weight: 700; line-height: 1.4; margin:0; padding:0"> LAB dinner</h2>
+                    <h2 style="font-size: 1.75em; font-weight: 700; line-height: 1.4; margin:0; padding:0">SoDA X KBLs 연합MT</h2>
                   </span>
                   <span class="entry-theme-photo-date">
-                    <p style="margin:0; padding:0">2월 26일, 2024</p>
+                    <p style="margin:0; padding:0">2월 5일~2월 6일, 2024</p>
                   </span>
                 </span>               
-                <img class="photo-image" src="{{ url_for('soda.static', filename='images/gallery/sodagroup.jpg') }}"  >
+                <img class="photo-image" src="{{ url_for('soda.static', filename='images/gallery/workshop.jpg') }}"  >
 
                 <span class="entry-theme-photo-head">
                   <span class="entry-theme-photo-date">
                     <p style="font-size: 14px;">  </p>
-                    <p style="margin:0; padding:0">참여자: 이소현 교수님 및 송민호, 강진호, 윤민범, 이민경</p>
+                    <p style="margin:0; padding:0">참여자(5명): 이소현 교수님, 송민호, 강진호, 윤민범, 이민경</p>
                   </span>
                   <span class="entry-theme-photo-date">
                     <p style="font-size: 14px;">  </p>
-                    <p style="margin:0; padding:0">장소: 고기꾼김춘배 강남점</p>
+                    <p style="margin:0; padding:0">장소: 경기도 광주시 곤지암읍 경충대로 펜션</p>
                   </span>
                 </span>
               </span>
             </section>
 
-
+            
 
 
 
@@ -134,7 +138,7 @@
 
       <section id = "footer">
         <div class = "inner">
-          <strong>SoDALAB, 산업경영공학과, 경기대학교</strong>
+          <strong>SoDALAB, 산업경영정보공학과, 경기대학교</strong>
           <br>
           <a>5층 506호, 제2공학관, 수원 캠퍼스, 경기대학교</a>
           <br>
@@ -158,6 +162,29 @@
     autoplay:{delay:3000,},
 
     });
+
+
+
+      document.addEventListener("DOMContentLoaded", () => {
+          const nav = document.getElementById("nav");
+          const currentLink_2 = nav.querySelector(".current_2");
+          const dropdown_2 = nav.querySelector(".dropdown_2");
+
+
+          currentLink_2.addEventListener("click", (e) => {
+            e.preventDefault(); 
+            dropdown_2.style.display = dropdown_2.style.display === "block" ? "none" : "block";
+            });
+
+          
+          document.addEventListener("click", (e) => {
+            if (!nav.contains(e.target)) {
+              dropdown_2.style.display = "none";
+            }
+          });
+
+        });
+
     </script>
     
 </html>

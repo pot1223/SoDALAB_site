@@ -159,7 +159,7 @@ body {
 #footer {
     background-color: #000000;
     color: #000000;
-    padding: 3em 0 3em 0;
+    padding: 2em 0 2em 0;
     background: #f7f7f7;
 }
 
@@ -305,6 +305,11 @@ body {
 
 }
 
+#nav a.current_2 {
+  position: relative; /* 드롭다운 메뉴가 해당 링크 기준으로 위치 */
+
+}
+
 .dropdown {
   list-style:none;
   display: none; /* 기본적으로 숨김 */
@@ -320,4 +325,21 @@ body {
 #nav a.detail{
   display:block;
   text-align: center;
+}
+
+#nav a.detail_2{
+  display:block;
+  text-align: center;
+}
+
+.dropdown_2 {
+  list-style:none;
+  display: none; /* 기본적으로 숨김 */
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  width:auto;
+  line-height: 2em;
+  padding:0;
+  margin:0 0 0 8.85em;
 }

@@ -35,3 +35,7 @@ def domain():
 @soda.route("/prof")
 def prof():
     return render_template("soda/prof.html")
+
+@soda.route("/graduate")
+def graduate():
+    return render_template("soda/graduate.html")
