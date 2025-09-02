@@ -79,13 +79,19 @@
         <div class="container swiper" id="main-content"> 
           <div class="card-wrapper">
             <ul class="card-list swiper-wrapper">
+              
+              {% for home_content in home_contents %}
+
               <li class= "card-item swiper-slide">
-                <p style="color: #d5d5d5;">  12월 27일, 2024 </p>
+                <p style="color: #d5d5d5;">  {{home_content.date}} </p>
                 <br>
-                <h2 style="margin-top:0.5em; color: #d5d5d5;"><strong>수상</strong></h2>
-                <p style="margin:0.5em 0; line-height:1.4; color: #d5d5d5;"> 연세대학교 사회문제 해결 아이디어 대회 최우수상 수상  </p> 
-                <p style="margin:0.5em 0; line-height:1.4; color: #d5d5d5;"> 주졔: 생성형 AI의 적대적 프롬프트 탐지 모델 개발 및 활용 </p> 
+                <h2 style="margin-top:0.5em; color: #d5d5d5;"><strong>{{home_content.title}}</strong></h2>
+                <p style="margin:0.5em 0; line-height:1.4; color: #d5d5d5;"> {{home_content.content}}  </p> 
               </li>
+
+              {% endfor %}
+
+
               <li class= "card-item swiper-slide">
                 <p style="color: #d5d5d5;">  12월 15일, 2024 </p>
                 <br>

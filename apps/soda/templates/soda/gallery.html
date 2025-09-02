@@ -43,90 +43,33 @@
 
 
           <div class="swiper-wrapper">
+
+            {% for activity in activity_photos %}
             <section class="entry swiper-slide">
               <span class="entry-theme-photo">
                 <span class="entry-theme-photo-head">
                   <span class="entry-theme-photo-title">
-                    <h2 style="font-size: 1.75em; font-weight: 700; line-height: 1.4; margin:0; padding:0"> LAB dinner</h2>
+                    <h2 style="font-size: 1.75em; font-weight: 700; line-height: 1.4; margin:0; padding:0"> {{activity.title}}</h2>
                   </span>
                   <span class="entry-theme-photo-date">
-                    <p style="margin:0; padding:0">2월 26일, 2024</p>
+                    <p style="margin:0; padding:0">{{activity.date}}</p>
                   </span>
                 </span>               
-                <img class="photo-image" src="{{ url_for('soda.static', filename='images/gallery/sodagroup.jpg') }}"  >
+                <img class="photo-image" src="{{ url_for('soda.static', filename='images/gallery/' + activity.activity_image) }}"  >
 
                 <span class="entry-theme-photo-head">
                   <span class="entry-theme-photo-date">
                     <p style="font-size: 14px;">  </p>
-                    <p style="margin:0; padding:0">참여자(5명): 이소현 교수님 및 송민호, 강진호, 윤민범, 이민경</p>
+                    <p style="margin:0; padding:0">참여자: {{activity.people}}</p>
                   </span>
                   <span class="entry-theme-photo-date">
                     <p style="font-size: 14px;">  </p>
-                    <p style="margin:0; padding:0">장소: 고기꾼김춘배 강남점</p>
+                    <p style="margin:0; padding:0">장소:{{activity.venue}}</p>
                   </span>
                 </span>
               </span>
             </section>
-
-            <section class="entry swiper-slide">
-              <span class="entry-theme-photo">
-                <span class="entry-theme-photo-head">
-                  <span class="entry-theme-photo-title">
-                    <h2 style="font-size: 1.75em; font-weight: 700; line-height: 1.4; margin:0; padding:0"> ICIS </h2>
-                  </span>
-                  <span class="entry-theme-photo-date">
-                    <p style="margin:0; padding:0">12월 16일, 2024</p>
-                  </span>
-                </span>               
-                <img class="photo-image" src="{{ url_for('soda.static', filename='images/gallery/icis.jpg') }}"  >
-                <span class="entry-theme-photo-head">
-                  <span class="entry-theme-photo-date">
-                    <p style="font-size: 14px;">  </p>
-                    <p style="margin:0; padding:0">참여자(2명): 이소현 교수님 및 송민호</p>
-                  </span>
-                  <span class="entry-theme-photo-date">
-                    <p style="font-size: 14px;">  </p>
-                    <p style="margin:0; padding:0">장소: 태국 방콕</p>
-                  </span>
-                </span>
-              </span>
-            </section>
-
-
-            <section class="entry swiper-slide">
-            <section class="entry swiper-slide">
-              <span class="entry-theme-photo">
-                <span class="entry-theme-photo-head">
-                  <span class="entry-theme-photo-title">
-                    <h2 style="font-size: 1.75em; font-weight: 700; line-height: 1.4; margin:0; padding:0">SoDA X KBLs 연합MT</h2>
-                  </span>
-                  <span class="entry-theme-photo-date">
-                    <p style="margin:0; padding:0">2월 5일~2월 6일, 2024</p>
-                  </span>
-                </span>               
-                <img class="photo-image" src="{{ url_for('soda.static', filename='images/gallery/workshop.jpg') }}"  >
-
-                <span class="entry-theme-photo-head">
-                  <span class="entry-theme-photo-date">
-                    <p style="font-size: 14px;">  </p>
-                    <p style="margin:0; padding:0">참여자(5명): 이소현 교수님, 송민호, 강진호, 윤민범, 이민경</p>
-                  </span>
-                  <span class="entry-theme-photo-date">
-                    <p style="font-size: 14px;">  </p>
-                    <p style="margin:0; padding:0">장소: 경기도 광주시 곤지암읍 경충대로 펜션</p>
-                  </span>
-                </span>
-              </span>
-            </section>
-
-            
-
-
-
-
-
-
-
+            {% endfor %}
 
           </div>
         </div>

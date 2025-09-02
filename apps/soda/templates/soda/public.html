@@ -8,7 +8,6 @@
 
     </head>
 
-  
     
     <body>
 
@@ -60,640 +59,88 @@
           </div>
 
 
-          <section data-tab="tab02" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> Understanding Cybercrimes from a Criminal’s Perspective: Why and How Suspects Commit Cybercrimes?</h4>
-              <p style="margin:0; padding:0;">
-                So-Hyun Lee, Ilwoong Kang, and Hee-Woong Kim
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Technology in Society, 2023/11, Article 102361.
-              </p>
-            </span>
-          </section>
+
+          {% for aboard_publication in aboard_publications %}
 
 
           <section data-tab="tab02" class="entry entry-theme" style="display: block;">
             <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> Unveiling the Success Factors of BTS: A Mixed-Methods Approach</h4>
+              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> {{ aboard_publication.title }}</h4>
               <p style="margin:0; padding:0;">
-                So-Hyun Lee, Soobin Choi, and Hee-Woong Kim
+                {{ aboard_publication.authors }}
               </p>
               <br>
               <p style="margin:0; padding:0;">
-                Internet Research, 31(5), 2021/11, pp. 1518-1540.
+                {{ aboard_publication.reference }}
               </p>
             </span>
           </section>
 
-          <section data-tab="tab02" class="entry entry-theme" style="display: block;">
+          {% endfor %}
+
+
+
+
+          {% for domestic_publication in domestic_publications %}
+
+          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
             <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> Do Wearable Activity Trackers Improve Employees’ Health and Increase Re-Participation in Wellness Programs?</h4>
+              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> {{ domestic_publication.title }}</h4>
               <p style="margin:0; padding:0;">
-                Gwanhoo Lee and So-Hyun Lee [Corresponding author]
+                {{ domestic_publication.authors }}
               </p>
               <br>
               <p style="margin:0; padding:0;">
-                Health Policy and Technology, 10(4), 2021/11, 100582.
+                {{ domestic_publication.reference }}
               </p>
             </span>
           </section>
 
-          <section data-tab="tab02" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> Prediction of Online Video Advertising Inventory based on TV Programs: A Deep Learning Approach</h4>
-              <p style="margin:0; padding:0;">
-                So-Hyun Lee, Sanghyeak Yoon, and Hee-Woong Kim
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                IEEE Access, 9, 2021/02, pp. 22516-22527.
-              </p>
-            </span>
-          </section>
+          {% endfor %}
 
-          <section data-tab="tab02" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> Effects of 3D Virtual “Try-On” on Online Sales and Customers’ Purchasing Experiences</h4>
-              <p style="margin:0; padding:0;">
-                Hyunwoo Hwangbo, Eun Hie Kim, So-Hyun Lee, and Young Jae Jang
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                IEEE Access, 8, 2020/09, pp. 189479-189489.
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab02" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> What Makes People Send Gifts via Social Network Services? A Mixed Methods Approach</h4>
-              <p style="margin:0; padding:0;">
-                So-Hyun Lee, Su-Jin Choi and Hee-Woong Kim
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Internet Research, 30(1), 2020/02, pp. 315-334. 
-              </p>
-            </span>
-          </section>
-
-
-          <section data-tab="tab02" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> Decisional Factors Leading to the Reuse of An On-Demand Ride Service</h4>
-              <p style="margin:0; padding:0;">
-                So-Hyun Lee, Bo-Yeon Lee, and Hee-Woong Kim
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Information & Management, 56(4), 2019/06, pp. 493-506.
-              </p>
-            </span>
-          </section>
-
-
-          <section data-tab="tab02" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> Examining Gift through Social Network Services: A Social Exchange Theory Perspective</h4>
-              <p style="margin:0; padding:0;">
-                Hee-Woong Kim, Atreyi Kankanhalli, and So-Hyun Lee [Corresponding author]
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Information Systems Research (ISR) [Top Journal], 29(4), 2018/12, pp. 805-828.
-              </p>
-            </span>
-          </section>
 
 
           
-          <section data-tab="tab02" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> Examining Online Citizenship Behaviors in Social Network Sites: A Social Capital Perspective</h4>
-              <p style="margin:0; padding:0;">
-                Jung Eun Son, So-Hyun Lee, Eun-Young Cho, and Hee-Woong Kim
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Behaviour & Information Technology (BIT), 35(9), 2016/03, pp. 730-747.
-              </p>
-            </span>
-          </section>
-
-
-          <section data-tab="tab02" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> Why People Post Benevolent and Malicious Comments Online</h4>
-              <p style="margin:0; padding:0;">
-                So-Hyun Lee and Hee-Woong Kim
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Communications of the ACM (CACM), 58(11), 2025/11, pp. 74-79.
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab02" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> User Resistance to Open Source Migration: The Case of Linux</h4>
-              <p style="margin:0; padding:0;">
-                Hee-Woong Kim, Hock Chuan, and So-Hyun Lee
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Journal of Database Management (JDM), 25(1), 2014/03, pp. 59-79.
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab02" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> A Mixed Methods Approach to Electronic Word-of-Mouth in the Open-Market Context</h4>
-              <p style="margin:0; padding:0;">
-                So-Hyun Lee, Seung-Eui Noh, and Hee-Woong Kim
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                International Journal of Information Management, 33(4), 2013/08, pp. 687-696.
-              </p>
-            </span>
-          </section>
-
-
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> 엘리베이터 TV 광고의 인지 및 효과에 관한 연구: 실험적 접근과 EEG 분석</h4>
-              <p style="margin:0; padding:0;">
-                이소현, 윤상혁
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                지식경영연구, 25(3), pp. 253-278.
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> 메타버스 투자를 위한 주요 요인 분석: 패션브랜드 기업 관점</h4>
-              <p style="margin:0; padding:0;">
-                이소현, 윤상혁, 나미정
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                한국 IT서비스학회지, 23(2), pp. 63-81.
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> 수소차 활성화를 위한 주요 요인 도출과 전략 제안: 텍스트 마이닝과 인터뷰 혼합방법론</h4>
-              <p style="margin:0; padding:0;">
-                류기범, 윤민범, 이소현 [교신저자]
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                경영정보학연구, 26(4), pp. 23-44.
-              </p>
-            </span>
-          </section>
-
-
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> 농산물 가격 예측을 위한 딥러닝 모델 개발 : 날씨와 경제 변수를 중심으로</h4>
-              <p style="margin:0; padding:0;">
-                윤민정, 최수현, 이소현 [교신저자], 김희웅
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                경영정보학연구, 26(3), 2024/8, 223-239.
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> 사이버 범죄의 특성과 대응방안 연구: 저작권 침해, 도박, 음란물 범죄를 중심으로</h4>
-              <p style="margin:0; padding:0;">
-                강일웅, 김재희, 이소현, 김희웅
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                지식경영연구, 25(2), 2024/6, 69-94.
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> 클러스터링 기법을 이용한 이륜차 사고의 특징 분류</h4>
-              <p style="margin:0; padding:0;">
-                허원진, 강진호, 이소현 [교신저자]
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                지식경영연구, 25(1), pp. 217-233.
-              </p>
-            </span>
-          </section>
-
-
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> 불법주정차 단속을 위한 지역(장소) 분류 및 활용 방안: 경기도를 중심으로</h4>
-              <p style="margin:0; padding:0;">
-                한현, 최소연, 이소현 [교신저자]
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Information Systems Review, 25(4), 2023/11, pp.113-130.
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> Identification of Employee Experience Factors and Their Influence on Job Satisfaction</h4>
-              <p style="margin:0; padding:0;">
-                Juhyeon Lee, So-Hyun Lee [Corresponding author], and Hee-Woong Kim
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                The Korea Society of Management Information System, 25(2), 2023/05, pp. 181-203.
-              </p>
-            </span>
-          </section>
-
-
-          
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> A Topic Modeling Approach to the Analysis of Happiness Issues Before and After Pandemic</h4>
-              <p style="margin:0; padding:0;">
-                Gahye Kim, and So-Hyun Lee [Corresponding author]
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Journal of Intelligence and Information Systems, 28(3), 2022/09, pp. 81-103.
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> An Analysis of Major Factors Related to the Cause and Damage of Malicious Comments: A Mixed-Methods Approach</h4>
-              <p style="margin:0; padding:0;">
-                Sodam Kim, Byeong-Iin Jeon, and So-Hyun Lee [Corresponding author]
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Internet e-Commerce Research, 21(6), 2021/12, pp. 135-154.
-              </p>
-            </span>
-          </section>
-
-
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> Examining Malicious Online Comments from the Bystander Effect Perspective</h4>
-              <p style="margin:0; padding:0;">
-                Sodam Kim, Sumeet Gupta, So-Hyun Lee, and Hee-Woong Kim
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Asia Pacific Journal of Information Systems, 31(1), 2021/03, pp. 1-16. [SCOPUS]
-              </p>
-            </span>
-          </section>
-
-
-          
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> A Study of
-                the Beauty Commerce Customer Segment Classification and Application based on Machine Learning: Focusing on Untact Service</h4>
-              <p style="margin:0; padding:0;">
-                Sang-hyeak Yoon, Yoonjin Choi, So-Hyun Lee, and Hee-Woong Kim
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Information Systems Review, 22(4), 2020/11, pp. 75-92.
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> An Analysis of Positive/Negative Issues in Text Mining-based Real-Time Online Lecture Services</h4>
-              <p style="margin:0; padding:0;">
-                Gyeong Ju, So-Hyun Lee [Corresponding author], Jaeyoon Kim, and Choong, C. Lee
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Global Business Administration Review, 17(5), 2020/10, pp. 20-45.
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> A Study on Use of Untact Service: Based on Kiosk Case</h4>
-              <p style="margin:0; padding:0;">
-                Jaeyoung An, Coong C. Lee, Daeun Bae, and So-Hyun Lee [Corresponding author]
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Internet e-Commerce Research, 20(4), 2020/08, pp. 49-73.
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> Investigating Brand Page Engagement in the SNS Marketing Context</h4>
-              <p style="margin:0; padding:0;">
-                So-Hyun Lee and Hee-Woong Kim
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Asia Pacific Journal of Information Systems, 30(2), 2020/06, pp. 284-307. [SCOPUS]
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> An Analysis
-                on Key Factors of Mobile Fitness Application by Using Text Mining Techniques: User Experience Perspective</h4>
-              <p style="margin:0; padding:0;">
-                So-Hyun Lee, Jinsol Kim, Sang-hyeak Yoon, and Hee-Woong Kim
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Korea Society of IT Services, 19(3), 2020/06, pp. 117-137.
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> The Joint Sentiment Topic Modeling Approach to the Analysis of Key Factors for Korea Travel Dissatisfaction</h4>
-              <p style="margin:0; padding:0;">
-                Yoonjin Choi, So-Hyun Lee, Sang-hyeak Yoon, and Hee-Woong Kim [Corresponding author]
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Korea Business Review, 24(2), 2020/05, pp. 121-141.
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> A
-                Comparative Analysis of E-commerce Issues between Customers with and without Paid Membership: Using Text Mining Technique</h4>
-              <p style="margin:0; padding:0;">
-                Youran Woo, Coong C. Lee, and So-Hyun Lee [Corresponding author]
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Internet e-Commerce Research, 20(2), 2020/04, pp. 1-19.
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> A
-                Study of the Classification and Application of Digital Broadcasting Program Type based on Machine Learning</h4>
-              <p style="margin:0; padding:0;">
-                Sang-hyeak Yoon, So-Hyun Lee, and Hee-Woong Kim [Corresponding author]
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Knowledge Management Research, 20(3), 2019/09, pp. 119-137.
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> Analysis of
-                Cyber Crime and Its Characteristics</h4>
-              <p style="margin:0; padding:0;">
-                So-Hyun Lee, Ilwoong Kang, Yoonhyuk Jung, and Hee-Woong Kim
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Information Systems Review, 21(3), 2019/08, pp. 1-26.
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> Comparative Analysis of WorkLife Balance Issues between Korea and the United States</h4>
-              <p style="margin:0; padding:0;">
-                So-Hyun Lee, Minsu Kim, and Hee-Woong Kim
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Koreanstudies Information Service System, 28(2), 2019/06, pp. 153-179.
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab03" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> A Text Mining Approach to the Analysis of Key Factors for Cosmetic Plastic Surgery</h4>
-              <p style="margin:0; padding:0;">
-                So-Hyun Lee, Saeah Shon, Hee-Woong Kim
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Knowledge Management Research, 20(1), 2019/03, pp. 45-75.
-              </p>
-            </span>
-          </section>
-
+          {% for aboard_conference in aboard_conferences %}
 
           <section data-tab="tab04" class="entry entry-theme" style="display: block;">
             <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> Desirable nature of bMail-based online identifier</h4>
+              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> {{ aboard_conference.title }}</h4>
               <p style="margin:0; padding:0;">
-                Bright Internet Global Symposium 2024
+                {{ aboard_conference.conference_name }}
               </p>
               <br>
               <p style="margin:0; padding:0;">
-                Pre-International Conference on Information Systems (ICIS) 2024 Workshop, 2024 Dec, BangKok, Thailand (Best Paper Runner-Up Award)
+                {{ aboard_conference.date }}
               </p>
             </span>
           </section>
-
-          <section data-tab="tab04" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> Examining information systems infusion over the routinization</h4>
-              <p style="margin:0; padding:0;">
-                Pre-ICIS SIG-HCI Workshop
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                International Conference on Information Systems (ICIS), 2019 Dec, Munich Germany (Best Paper Award)
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab04" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> Does activity tracking technology increase employee participation in their employer’s wellness programs?: A self-regulation theory perspective</h4>
-              <p style="margin:0; padding:0;">
-                Americas Conference on Information Systems (AMCIS)
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                2019, Cancun, Mexico
-              </p>
-            </span>
-          </section>
+          {% endfor %}
 
 
-          <section data-tab="tab04" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> Investigating the development of brand page engagement in the SNS marketing context</h4>
-              <p style="margin:0; padding:0;">
-                International Conference on Information Systems (ICIS)
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                KrAIS Research Workshop 2016, Dublin, Ireland
-              </p>
-            </span>
-          </section>
 
-          <section data-tab="tab04" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> What Motivates People to Post Comment Online</h4>
-              <p style="margin:0; padding:0;">
-                Interational Conference on Information Systems (ICIS)
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                HCI/MIS Workshop, December 2014, Auckland New Zealand
-              </p>
-            </span>
-          </section>
 
-          <section data-tab="tab04" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> An Exploratory Study on Cyber Bullying</h4>
-              <p style="margin:0; padding:0;">
-                Pacific-Asia Conference on Information Systems (PACIS)
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                KMIS Workshop, Jeju Korea, 2013
-              </p>
-            </span>
-          </section>
 
-          <section data-tab="tab04" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> Examining Brand Engagement in the Mobile Social Network Service Marketing Context</h4>
-              <p style="margin:0; padding:0;">
-                Pacific-Asia Conference on Information Systems (PACIS)
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Jeju Korea, 2013
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab04" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> A User Commitment Approach to Information Systems Infusion</h4>
-              <p style="margin:0; padding:0;">
-                Pacific-Asia Conference on Information Systems (PACIS)
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                Hochiminh Vietnam, 2012. (Best Paper 2nd Runner-up Award)
-              </p>
-            </span>
-          </section>
+          {% for domestic_conference in domestic_conferences %}
 
 
           <section data-tab="tab05" class="entry entry-theme" style="display: block;">
             <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> ODR 서비스차량 지연 시 대기허용범위 확대를 위한 주요 요인 도출: 텍스트 마이닝 기법</h4>
+              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> {{domestic_conference.title }}</h4>
               <p style="margin:0; padding:0;">
-                한국전자거래학회&한국스마트미디어학회 춘계학술대회
+                {{domestic_conference.conference_name}}
               </p>
               <br>
               <p style="margin:0; padding:0;">
-                2024.05.
+                {{domestic_conference.date}}
               </p>
             </span>
           </section>
-
-          <section data-tab="tab05" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> 생성형 AI 부작용 요인 도출 및 대응방안 제안: 텍스트 마이닝 활용</h4>
-              <p style="margin:0; padding:0;">
-                한국경영정보학회 춘계학술대회
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                2024.05.
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab05" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> 미래 전력 수요 예측: AI, 전기차 보급률, 데이터센터 변수 활용</h4>
-              <p style="margin:0; padding:0;">
-                한국지능정보시스템학회 추계학술대회
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                2024.10.
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab05" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> 수소차 활성화를 위한 주요 요인 도출: 혼합연구방법론</h4>
-              <p style="margin:0; padding:0;">
-                한국경영정보학회 춘계학술대회
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                2024.05.
-              </p>
-            </span>
-          </section>
-
-          <section data-tab="tab05" class="entry entry-theme" style="display: block;">
-            <span class="publication-content"> 
-              <h4 style="font-size: 1.1em; font-weight: 700; line-height: 1.4; margin:0; padding:0;"> 이커머스 플랫폼에서 리뷰와 평점 불일치 문제 해결: 감성 및 시각화 분석</h4>
-              <p style="margin:0; padding:0;">
-                한국경영정보학회 추계학술대회
-              </p>
-              <br>
-              <p style="margin:0; padding:0;">
-                2024.11.
-              </p>
-            </span>
-          </section>
+          {% endfor %}
 
       </section>
+
+
 
 
 

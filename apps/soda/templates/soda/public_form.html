@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang = "ko">
+
+
+    <head>
+        <meta charset = "UTF-8" />
+        <title>intro</title>
+
+    </head>
+
+    <body>
+        <form method ="POST" action="/soda/add_publication">
+            <h4>[Publication 정보]</h4>
+            <p> Title:<input type = "text" name = "title"></p>
+            <p> Authors: <input type = "text" name = "authors"></p>
+            <p>Reference: <input type="text" name="reference" required></p>
+            <select name="pub_type" required>
+                <option value="domestic">국내저널</option>
+                <option value="abroad">해외저널</option>
+            </select>
+            <button type="submit">추가하기</button>
+        </form>
+        <form method="POST" action="/soda/delete_publication">
+            <h4>[Publication 정보 삭제]</h4>
+            <p>삭제할 Title: <input type="text" name="title_to_delete" required></p>
+            <button type="submit">삭제하기</button>
+        </form>
+
+        <form method ="POST" action="/soda/add_conference">
+            <h4>[Conference 정보]</h4>
+            <p> Title:<input type = "text" name = "title"></p>
+            <p> Conference_name: <input type = "text" name = "conference_name"></p>
+            <p> Date: <input type="text" name="date" required></p>
+            <select name="confer_type" required>
+                <option value="domestic">국내학회</option>
+                <option value="abroad">해외학회</option>
+            </select>
+            <button type="submit">추가하기</button>
+        </form>
+        <form method="POST" action="/soda/delete_conference">
+            <h4>[Conference 정보 삭제]</h4>
+            <p>삭제할 Title: <input type="text" name="title_to_delete" required></p>
+            <button type="submit">삭제하기</button>
+        </form>
+
+
+        <form method="POST" action="/soda/add_spec">
+            <h4>[Member Spec 정보 추가]</h4>
+            <p> Member:<input type = "text" name = "member" required></p>
+            <p>People: <input type="text" name="people" required></p>
+            <p>Spec Title: <input type="text" name="title" required></p>
+            <p>Organization: <input type="text" name="organi" required></p>
+            <p>Date: <input type="text" name="date" required></p>
+            <p>Price: <input type="text" name="price" ></p>
+            <button type="submit"> 추가하기</button>
+        </form>
+        <form method="POST" action="/soda/delete_spec">
+            <h4>[Member Spec 정보 삭제]</h4>
+            <p>삭제할 member spec: <input type="text" name="member_to_delete" required></p>
+            <p>삭제할 Spec Title: <input type="text" name="title_to_delete" required></p>
+            <button type="submit">삭제하기</button>
+        </form>
+
+
+        <form method ="POST" action="/soda/add_member" enctype="multipart/form-data">
+            <h4>[Member 정보]</h4>
+            <p> Member:<input type = "text" name = "member"></p>
+            <p> Profile_image: <input type = "file" name="profile_image" accept="image/*"></p>
+            <p> Degree:<input type = "text" name = "degree"></p>
+            <p> Department: <input type = "text" name = "department"></p>
+            <p> Email:<input type = "text" name = "email"></p>
+            <p> Interest_part: <input type = "text" name = "interest_part"></p>
+            <p> Affiliation: <input type = "text" name = "affiliation"></p>
+
+            <select name="member_type" required>
+                <option value="present">현재멤버</option>
+                <option value="past">졸업멤버</option>
+            </select>
+            <button type="submit">추가하기</button>
+        </form>
+        <form method="POST" action="/soda/delete_member">
+            <h4>[Member 정보 삭제]</h4>
+            <p>삭제할 Member 이름: <input type="text" name="member_to_delete" required></p>
+            <button type="submit">삭제하기</button>
+        </form>
+
+
+
+        <form method="POST" action="/soda/add_home_content">
+            <h4>[Home content 정보 추가]</h4>
+            <p>Date: <input type="text" name="date" required></p>
+            <p>Title: <input type="text" name="title" required></p>
+            <p>Content: <input type="text" name="content" required></p>
+            <button type="submit"> 추가하기</button>
+        </form>
+
+        <form method="POST" action="/soda/delete_home_content">
+            <h4>[Home content 정보 삭제]</h4>
+            <p>삭제할 Title: <input type="text" name="title_to_delete" required></p>
+            <button type="submit">삭제하기</button>
+        </form>
+
+
+
+        <form method ="POST" action="/soda/add_activity" enctype="multipart/form-data">
+            <h4>[Activity 정보]</h4>
+            <p> Title:<input type = "text" name = "title"></p>
+            <p> Activity_image: <input type = "file" name="activity_image" accept="image/*"></p>
+            <p> Date:<input type = "text" name = "date"></p>
+            <p> People: <input type = "text" name = "people"></p>
+            <p> Venue:<input type = "text" name = "venue"></p>
+
+            <button type="submit">추가하기</button>
+        </form>
+        <form method="POST" action="/soda/delete_activity">
+            <h4>[Activity 정보 삭제]</h4>
+            <p>삭제할 Title: <input type="text" name="title_to_delete" required></p>
+            <button type="submit">삭제하기</button>
+        </form>
+
+    </body>
+    
+    <script>
+
+    </script>
+   
+   
+</html>
