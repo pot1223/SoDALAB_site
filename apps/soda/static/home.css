@@ -26,7 +26,7 @@ body {
 
 
 .banner-bg2 {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.25);
 }
 
 #header {
@@ -43,8 +43,6 @@ body {
 }
 
 #header .inner {
-    max-width: 65em;
-    width: calc(100% - 4em);
     margin: 0 auto;
     position: relative;
 }
@@ -130,22 +128,22 @@ body {
 
 #banner {
     color: #ffffff;
-    padding: 9em 0 0 0;
+    padding: 5em 0 0 0;
     text-align: center;
     position: relative;
 }
 
 #banner .banner-pad {
-    padding: 0 0 35em 0;
+    padding: 0 0 15em 0;
 }
 
 #banner .inner {
     max-width: 65em;
-    width: calc(100% - 6em);
     margin: 0 auto;
     position: relative;
     z-index: 10000;
     line-height: 1.5;
+
 }
 
 #banner h1 {
@@ -159,7 +157,7 @@ body {
 #footer {
     background-color: #000000;
     color: #000000;
-    padding: 2em 0 2em 0;
+    padding: 1em 0 1em 0;
     background: #f7f7f7;
 }
 
@@ -197,13 +195,13 @@ body {
 
 .card-wrapper{
   overflow: hidden;
-  margin:0 60px 20px;
+  margin:0 60px 60px;
 }
 
 
 .card-list .card-item{
   list-style:none;
-  height:300px;
+  height:250px;
 }
 
 .card-list .card-item{
@@ -341,5 +339,5 @@ body {
   width:auto;
   line-height: 2em;
   padding:0;
-  margin:0 0 0 8.85em;
+  margin:0 8em 0 8.4em;
 }
