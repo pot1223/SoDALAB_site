@@ -44,7 +44,7 @@ body {
 
 #header .inner {
     max-width: 65em;
-    width: calc(100% - 6em);
+    width: calc(100% - 4em);
     margin: 0 auto;
     position: relative;
 }
@@ -55,7 +55,7 @@ body {
     height: inherit;
     left: 0;
     line-height: inherit;
-    margin: 0 0 0 10em;
+    margin: 0 0 0 0em;
     padding: 0;
     position: absolute;
     top: 0;
@@ -81,7 +81,7 @@ body {
 
 #nav  {
     display: inline-block;
-    margin:  0 5em 0 2em;
+    margin:  0 0em 0 0em;
 }
 
 #nav a:hover{
@@ -130,7 +130,7 @@ body {
 
 #banner {
     color: #ffffff;
-    padding: 10em 0 0 0;
+    padding: 9em 0 0 0;
     text-align: center;
     position: relative;
 }
