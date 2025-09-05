@@ -55,7 +55,7 @@
                     <p style="margin:0; padding:0">{{activity.date}}</p>
                   </span>
                 </span>               
-                <img class="photo-image" src="{{ url_for('soda.static', filename='images/gallery/' + activity.activity_image) }}"  >
+                <img class="photo-image" src="{{ activity.public_image_url }}"  >
 
                 <span class="entry-theme-photo-head">
                   <span class="entry-theme-photo-date">

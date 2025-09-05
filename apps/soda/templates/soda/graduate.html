@@ -48,7 +48,7 @@
                     {% for past_member  in past_members %}
                     <div class="entry">
                         <span class="image-left"> 
-                            <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/' + past_member.profile_image) }}"> 
+                            <img class="profile-photo" src="{{ past_member.public_image_url }}"> 
                         </span>
                         <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;"> {{past_member.member}}</h4>
                         <div style="padding-top:10px;"> {{past_member.degree}} </div>

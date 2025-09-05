@@ -49,7 +49,7 @@ class present_member(db.Model):
     __tablename__ = "present_member"
     id = db.Column(db.Integer, primary_key = True)
     member = db.Column(db.String(500), nullable = False)
-    profile_image = db.Column(db.String(100), nullable=False, default='default.jpg')
+    profile_image = db.Column(db.String(255), nullable=False, default='default.jpg')
     degree = db.Column(db.String(500), nullable = False)
     department = db.Column(db.String(500), nullable = False)
     email = db.Column(db.String(500), nullable = False)
@@ -60,7 +60,7 @@ class past_member(db.Model):
     __tablename__ = "past_member"
     id = db.Column(db.Integer, primary_key = True)
     member = db.Column(db.String(500), nullable = False)
-    profile_image = db.Column(db.String(100), nullable=False, default='default.jpg')
+    profile_image = db.Column(db.String(255), nullable=False, default='default.jpg')
     degree = db.Column(db.String(500), nullable = False)
     department = db.Column(db.String(500), nullable = False)
     email = db.Column(db.String(500), nullable = False)
@@ -78,6 +78,6 @@ class activity_photo(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     title = db.Column(db.String(500), nullable = False)
     date = db.Column(db.String(500), nullable = False)
-    activity_image = db.Column(db.String(100), nullable=False, default='default.jpg')
+    activity_image = db.Column(db.String(255), nullable=False, default='default.jpg')
     people = db.Column(db.String(500), nullable = False)
     venue = db.Column(db.String(500), nullable = False)

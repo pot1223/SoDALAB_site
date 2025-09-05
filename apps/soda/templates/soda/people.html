@@ -46,7 +46,7 @@
                     <div class="entry">
 
                         <span class="image-left"> 
-                            <img class="profile-photo" src="{{ url_for('soda.static', filename='images/people/' + present_member.profile_image) }}"> 
+                            <img class="profile-photo" src="{{ present_member.public_image_url }}"> 
                         </span>
                         <h4 style="font-size: 1.1em;  font-weight: 700; line-height: 1.4; margin: 0; padding: 0;">{{ present_member.member}}</h4>
                         <div style="padding-top:10px;"> {{ present_member.degree}} </div>
