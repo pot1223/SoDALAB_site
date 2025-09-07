@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
 
-
-html{
+html {
     margin: 0;
     padding: 0;
     border: 0;
@@ -23,7 +23,6 @@ body {
     font: inherit;
     vertical-align: baseline;
 }
-
 
 .banner-bg2 {
     background: rgba(0, 0, 0, 0.25);
@@ -63,26 +62,18 @@ body {
     font-weight: normal;
 }
 
-@media screen and (max-width: 700px) {
-  #header .logo {
-    display: none; /* 로고 숨김 */
-  }
-
-}
-
-
 .logo-image {
     height: 3em;
     vertical-align: middle;
-    filter:invert(100%) sepia(0%) saturate(0%) hue-rotate(250deg) brightness(101%) contrast(102%);
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(250deg) brightness(101%) contrast(102%);
 }
 
-#nav  {
+#nav {
     display: inline-block;
-    margin:  0 0em 0 0em;
+    margin: 0 0em 0 0em;
 }
 
-#nav a:hover{
+#nav a:hover {
     background: rgba(0, 0, 0, 0.3);
 }
 
@@ -98,15 +89,6 @@ body {
     margin: 0;
 }
 
-@media screen and (max-width: 700px) {
-  #header a  {
-    font-size: 0.4em;
-  }
-
-}
-
-
-
 .navPanelToggle {
     position: fixed;
     text-decoration: none;
@@ -114,7 +96,7 @@ body {
     right: 2em;
     top: 0.4em;
     width: 4em;
-    display: none;
+    display: none; /* --- 수정된 부분: 기본적으로 숨김 --- */
     z-index: 10002;
 }
 
@@ -143,7 +125,6 @@ body {
     position: relative;
     z-index: 10000;
     line-height: 1.5;
-
 }
 
 #banner h1 {
@@ -167,7 +148,8 @@ body {
     margin: 0 auto;
 }
 
-#footer strong, #footer b {
+#footer strong,
+#footer b {
     color: #6d6d6d;
 }
 
@@ -176,204 +158,212 @@ body {
 }
 
 #main-content {
-  position: relative;
+    position: relative;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
-
-*{
-  font-family: "Inter", sans-serif;
+* {
+    font-family: "Inter", sans-serif;
 }
 
-.swiper {
-  width: 1000px;
+/* --- 수정된 부분: swiper 너비 --- */
+/* 기존의 `.swiper` 선택자는 삭제하고 아래로 대체합니다. */
+.container.swiper {
+    width: 100%;
+    max-width: 1000px; /* 데스크탑에서 최대 너비 제한 */
 }
 
-.card{
-  font-size:0;
+.card {
+    font-size: 0;
 }
 
-.card-wrapper{
-  overflow: hidden;
-  margin:0 60px 60px;
-}
-
-
-.card-list .card-item{
-  list-style:none;
-  height:250px;
-}
-
-.card-list .card-item{
-  user-select:none;
-  display: block;
-  user-select:none;
-  background:rgba(0,0,0,0.7);
-  padding:18px;
-  border-radius:12px;
-  text-decoration:none;
-  border:2px solid transparent;
-  box-shadow:0 10px 10px rgba(0,0,0,0.05);
-  transition:0.2s ease;
-
+.card-wrapper {
+    overflow: hidden;
+    margin: 0 60px 60px;
 }
 
 .card-list .card-item {
-  cursor:grabbing;
+    list-style: none;
+    height: 250px;
+}
+
+.card-list .card-item {
+    user-select: none;
+    display: block;
+    user-select: none;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item {
+    cursor: grabbing;
 }
 
 .card-list .card-item:hover {
-  border-color: #abc7ff
+    border-color: #abc7ff
 }
 
-.card-item{
-  user-select: none;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 2em;
-  height: 18em;
+.card-item {
+    user-select: none;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2em;
+    height: 18em;
 }
 
-.card-wrapper .swiper-pagination-bullet{
-  height: 13px;
-  width: 13px;
-  opacity: 0.5;
-  background:  #fff; 
+.card-wrapper .swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #fff;
 }
 
 .card-wrapper .swiper-pagination-bullet-active {
-  opacity:1;
+    opacity: 1;
 }
 
-.card-wrapper .swiper-slide-button{
-  color: #fff;
-  margin-top: -35px;
-  font-size:3rem;
-  transition: 0.2s ease;
+.card-wrapper .swiper-slide-button {
+    color: #fff;
+    margin-top: -35px;
+    font-size: 3rem;
+    transition: 0.2s ease;
 }
 
-.swiper-slide-button:hover{
-  color: #abc7ff
+.swiper-slide-button:hover {
+    color: #abc7ff
 }
 
-@media screen and (max-width : 768px){
-  .card-wrapper{
-    margin:0 10px 25px;
-  }
-
-  .card-wrapper .swiper-slide-button{
-    display:none;
-  }
-}
-
-
-
-.card-button{
-  height:35px;
-  width:35px;
-  color: #5372F0;
-  border-radius: 50%;
-  margin: 30px 0 5px;
-  cursor:pointer;
-  background: none;
-  border: 2px solid #5372F0;
+.card-button {
+    height: 35px;
+    width: 35px;
+    color: #5372F0;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    cursor: pointer;
+    background: none;
+    border: 2px solid #5372F0;
 }
 
 .icon-image {
-  margin-inline:auto;
-  max-width: 60%;
+    margin-inline: auto;
+    max-width: 60%;
 }
 
 .card .title {
-  
-  text-align:center;
-  font-size:1.5rem;
-  line-height: 1.875rem;
-  margin-block:2.5rem 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    margin-block: 2.5rem 1.5rem;
 }
 
-.card .detail{
-  text-align : center;
-  font-size:1rem;
-  margin-block:0.5rem;
+.card .detail {
+    text-align: center;
+    font-size: 1rem;
+    margin-block: 0.5rem;
 }
 
 #nav a.current {
-  position: relative; /* 드롭다운 메뉴가 해당 링크 기준으로 위치 */
-  margin-left:1.2em;
-
+    position: relative;
+    margin-left: 1.2em;
 }
 
 #nav a.current_2 {
-  position: relative; /* 드롭다운 메뉴가 해당 링크 기준으로 위치 */
-
+    position: relative;
 }
 
 .dropdown {
-  list-style:none;
-  display: none; /* 기본적으로 숨김 */
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 1000;
-  width:auto;
-  line-height: 2em;
-  padding:0;
-  margin:0;
+    list-style: none;
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: auto;
+    line-height: 2em;
+    padding: 0;
+    margin: 0;
 }
 
-#nav a.detail{
-  display:block;
-  text-align: center;
+#nav a.detail {
+    display: block;
+    text-align: center;
 }
 
-#nav a.detail_2{
-  display:block;
-  text-align: center;
+#nav a.detail_2 {
+    display: block;
+    text-align: center;
 }
 
 .dropdown_2 {
-  list-style:none;
-  display: none; /* 기본적으로 숨김 */
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 1000;
-  width:auto;
-  line-height: 2em;
-  padding:0;
-  margin:0 0em 0 8.4em;
+    list-style: none;
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: auto;
+    line-height: 2em;
+    padding: 0;
+    margin: 0 0em 0 8.4em;
 }
 
 html, body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-/* 메인 콘텐츠는 자동으로 늘어나게 */
 #main-content {
-  flex: 1;
+    flex: 1;
 }
 
-/* footer는 항상 맨 밑으로 */
 #footer {
-  margin-top: auto;
-  text-align: left;
+    margin-top: auto;
+    text-align: left;
 }
 
-/* 반응형 대응 */
+
+/* --- 수정된 부분: 반응형(모바일) 스타일 --- */
 @media screen and (max-width: 768px) {
-  #banner h1 {
-    font-size: 1.2em;
-  }
-  #banner span {
-    font-size: 0.8em;
-  }
-  .card-item {
-    height: auto;
-    padding: 1em;
-  }
-  #footer {
-    font-size: 0.7em;
-    line-height: 1.4;
-  }
+    #banner h1 {
+        font-size: 1.2em;
+    }
+    #banner span {
+        font-size: 0.8em;
+    }
+    .card-item {
+        height: auto;
+        padding: 1em;
+    }
+    #footer {
+        font-size: 0.7em;
+        line-height: 1.4;
+    }
+    .card-wrapper {
+        margin: 0 10px 25px;
+    }
+    .card-wrapper .swiper-slide-button {
+        display: none;
+    }
 }
 
+/* --- 수정된 부분: 700px 이하 화면에서의 내비게이션 처리 --- */
+@media screen and (max-width: 700px) {
+    #header .logo {
+        display: none;
+    }
+    #header a {
+        font-size: 0.7em; /* 0.4em은 너무 작아서 약간 키웠습니다. */
+    }
+    
+    /* 기존 내비게이션 메뉴 숨기기 */
+    #nav {
+        display: none;
+    }
+    
+    /* 햄버거 메뉴 아이콘 보이기 */
+    .navPanelToggle {
+        display: block;
+    }
+}
