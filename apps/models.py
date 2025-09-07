@@ -9,7 +9,6 @@ class domestic_publication(db.Model):
     reference = db.Column(db.String(500), nullable = False)
 
 
-
 class aboard_publication(db.Model):
     __tablename__ = "aboard_publications"
     id = db.Column(db.Integer, primary_key = True)
