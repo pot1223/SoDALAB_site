@@ -16,6 +16,10 @@ def create_app(config_key='dev'):
     
     app = Flask(__name__)
     app.config.from_object(config[config_key])
+    app.config["SQLALCHEMY_ENGINE_OPTIONS"] = {
+        "pool_pre_ping": True,   # 끊어진 커넥션 자동 감지 후 재연결
+        "pool_recycle": 1800     # 30분마다 커넥션 새로 고침
+    }
     
     # --- 👇 3. 설정 값을 바탕으로 Supabase 클라이언트를 생성합니다. ---
     supabase = create_client(
