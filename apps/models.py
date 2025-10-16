@@ -78,5 +78,4 @@ class activity_photo(db.Model):
     title = db.Column(db.String(500), nullable = False)
     date = db.Column(db.String(500), nullable = False)
     activity_image = db.Column(db.String(255), nullable=False, default='default.jpg')
-    people = db.Column(db.String(500), nullable = False)
     venue = db.Column(db.String(500), nullable = False)

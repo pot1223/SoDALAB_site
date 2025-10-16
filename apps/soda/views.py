@@ -285,7 +285,6 @@ def add_home_content():
 def add_activity():
     title  = request.form.get("title")
     date = request.form.get("date")
-    people = request.form.get("people")
     venue = request.form.get("venue")
     activity_image_file = request.files.get('activity_image')
     # 2. 파일 처리: 파일이 존재하면 저장하고, 없으면 기본값 사용
@@ -326,7 +325,6 @@ def add_activity():
             title= title,
             activity_image=db_filename,
             date =date ,
-            people=people,
             venue=venue,
         )
 
